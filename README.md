@@ -10,7 +10,7 @@
 On the command line (the terminal)
 
 - Clone this repository where you want it.
-  - `git clone `
+  - `git clone https://github.com/hafizulwanandaputra/pec_permintaanmakanan_docker`
 - Change into the directory
 - `cd pec_permintaanmakanan_docker`
 - Change the MySQL account info in the `docker-compose.yml` file if you want
