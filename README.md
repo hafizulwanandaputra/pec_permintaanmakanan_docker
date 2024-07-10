@@ -30,7 +30,7 @@ On the command line (the terminal)
   - press ctrl-c
   - then run `docker compose down`
 - View the web pages at [http://localhost/html/ ](http://localhost/html)
-
+  - type the username `admin` and password `12345`. Password can be changed in [http://localhost/html/settings/changepassword ](http://localhost/html/settings/changepassword).
 - View phpMyAdmin at [http://pma.localhost ](http://pma.localhost)
   - type in the db user name and db password to log in
 
