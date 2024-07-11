@@ -19,7 +19,7 @@ services:
       - "traefik"
       - "mysql"
     volumes:
-      - "./www:/var/www/html/"
+      - "./www:/var/www/"
       - "./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini"
     labels:
       - "traefik.enable=true"
@@ -40,6 +40,11 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "12345"
       MYSQL_DATABASE: "pec_permintaanmakanan"
+      MYSQL_TCP_PORT: 3390
+    ports:
+    - 3390:3390
+    expose:
+      - 3390
     labels:
       - "traefik.enable=false"
 
@@ -51,7 +56,7 @@ services:
       - "mysql"
     environment:
       PMA_HOST: "mysql"
-      PMA_PORT: "3306"
+      PMA_PORT: "3390"
       UPLOAD_LIMIT: "256M"
     labels:
       - "traefik.enable=true"
