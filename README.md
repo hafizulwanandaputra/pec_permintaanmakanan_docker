@@ -28,25 +28,20 @@ On the command line (the terminal)
   - Password can be changed in [http://localhost/html/settings/changepassword ](http://localhost/html/settings/changepassword)
 - View phpMyAdmin at [http://pma.localhost ](http://pma.localhost)
   - Type in the db user name `root` and db password to log in `12345`
-  - You can change the MySQL account info in the `docker-compose.yml` file if you want
+  - You can change the password of MySQL database in the `docker-compose.yml` file if you want
     ```
       MYSQL_ROOT_PASSWORD: "12345"
-      MYSQL_DATABASE: "pec_permintaanmakanan"
     ```
 
 ## General Notes
 
-- This will run four containers: a proxy container, a PHP-Apache container, a MySQL container and
-  a phpMyAdmin container.
+- This will run four containers: a proxy container, a PHP-Apache container, a MySQL container and a phpMyAdmin container.
 - All of the files for the website building can go in the `www` folder.
-- The database files are stored in the `dbdata` folder. This allows for the
-  data to persist between restarts and for hands on access.
+- The database files are stored in the `dbdata` folder. This allows for the data to persist between restarts and for hands on access.
   - To restart with a clean database, just delete this folder.
-  - To seed the database with a database, tables, and data, just uncomment the
-    line in the docker-compose.yml file referencing `pec_permintaanmakanan_nodb.sql`. The `dbdata`
-    folder will need to be deleted first. This works best if using a mysql dump
-    file. Otherwise, the sql file just needs to have valid SQL statments.
+  - The line in the `docker-compose.yml` file referencing `pec_permintaanmakanan_nodb.sql` is used to seed the database `pec_permintaanmakanan` with a database, tables, and data of this application. The `dbdata` folder will need to be deleted first. This works best if using a mysql dump file. Otherwise, the sql file just needs to have valid SQL statments.
     - `- "./pec_permintaanmakanan_nodb.sql:/docker-entrypoint-initdb.d/pec_permintaanmakanan_nodb.sql"`
+    - `MYSQL_DATABASE: "pec_permintaanmakanan"`
 
 ## Traefik Notes
 
