@@ -1,0 +1,1449 @@
+INFO - 2023-11-23 06:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:42:46 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:42:46 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:45:15 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:45:15 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:45:15 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:45:15 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:45:15 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:45:28 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:45:41 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:45:44 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:45:44 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:46:50 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:46:50 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:46:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:46:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:46:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:46:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:46:56 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:46:59 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:47:10 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-23 06:50:46 --> "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('tempat_lahir', 'Tempat Lahir', 'Medan', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AlumniAdmin.php(274): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->update('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-23 06:54:32 --> "'nomor_hp' => [
+                'label' => 'Nomor HP',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi!'
+                ]
+                ]" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('\'nomor_hp\' => [
+                \'label\' => \'Nomor HP\',
+                \'rules\' => \'required\',
+                \'errors\' => [
+                    \'required\' => \'{field} wajib diisi!\'
+                ]
+                ]')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('0', '0', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AlumniAdmin.php(280): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->update('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-23 06:54:58 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\AlumniAdmin.php on line 272.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Controllers\\AlumniAdmin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AlumniAdmin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AlumniAdmin')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AlumniAdmin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-23 06:54:59 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\AlumniAdmin.php on line 272.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Controllers\\AlumniAdmin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AlumniAdmin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AlumniAdmin')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AlumniAdmin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-23 06:55:06 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\AlumniAdmin.php on line 272.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Controllers\\AlumniAdmin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AlumniAdmin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AlumniAdmin')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AlumniAdmin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-23 06:55:07 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\AlumniAdmin.php on line 272.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Controllers\\AlumniAdmin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AlumniAdmin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AlumniAdmin')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AlumniAdmin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-23 06:55:08 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\AlumniAdmin.php on line 272.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Controllers\\AlumniAdmin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AlumniAdmin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AlumniAdmin')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\AlumniAdmin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:56:57 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:57:00 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:57:00 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:57:00 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:57:00 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:57:00 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 06:57:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:57:02 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 115.
+ 1 APPPATH\Views\dashboard-admin\alumni\details.php(115): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 5 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 06:57:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 115.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-23 06:57:27 --> "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('nomor_hp', 'Tanggal Lahir', '', [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AlumniAdmin.php(276): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->update('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 06:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-23 06:59:24 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Validation\Validation.php on line 757.
+ 1 SYSTEMPATH\Validation\Validation.php(757): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\vendor\\codeigniter4\\framework\\system\\Validation\\Validation.php', 757)
+ 2 SYSTEMPATH\Validation\Validation.php(156): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\AlumniAdmin.php(276): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->update('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 06:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 07:00:40 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 07:00:40 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 115.
+ 1 APPPATH\Views\dashboard-admin\alumni\details.php(115): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 5 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 07:00:40 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 115.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 07:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 07:00:47 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 07:00:47 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 115.
+ 1 APPPATH\Views\dashboard-admin\alumni\details.php(115): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 5 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 07:00:47 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 115.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 07:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 07:01:27 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 07:01:27 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 07:01:27 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 07:01:27 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 07:01:27 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 07:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 07:01:29 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 07:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 07:01:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 07:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 07:02:06 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 07:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 07:02:28 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 07:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 07:07:23 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\details.php on line 61.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/details', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(139): view('dashboard-admin/alumni/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 07:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 07:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:02:13 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:02:13 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:02:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:02:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:02:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:02:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:02:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:02:27 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:02:27 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:03:08 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 88.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:03:08 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 94.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:03:17 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:03:17 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:03:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:03:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:03:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:03:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:03:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:04:04 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\pengumuman\index.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\pengumuman\\index.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/pengumuman/index', [], true)
+ 4 APPPATH\Controllers\PengumumanAdmin.php(38): view('dashboard-admin/pengumuman/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PengumumanAdmin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengumumanAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:04:04 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\pengumuman\index.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\pengumuman\\index.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/pengumuman/index', [], true)
+ 4 APPPATH\Controllers\PengumumanAdmin.php(38): view('dashboard-admin/pengumuman/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PengumumanAdmin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengumumanAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:04:04 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\pengumuman\index.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\pengumuman\\index.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/pengumuman/index', [], true)
+ 4 APPPATH\Controllers\PengumumanAdmin.php(38): view('dashboard-admin/pengumuman/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PengumumanAdmin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengumumanAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:04:45 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:04:45 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:05:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\pengumuman\index.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\pengumuman\\index.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/pengumuman/index', [], true)
+ 4 APPPATH\Controllers\PengumumanAdmin.php(38): view('dashboard-admin/pengumuman/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PengumumanAdmin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengumumanAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:05:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\pengumuman\index.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\pengumuman\\index.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/pengumuman/index', [], true)
+ 4 APPPATH\Controllers\PengumumanAdmin.php(38): view('dashboard-admin/pengumuman/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PengumumanAdmin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengumumanAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:05:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\pengumuman\index.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\pengumuman\\index.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/pengumuman/index', [], true)
+ 4 APPPATH\Controllers\PengumumanAdmin.php(38): view('dashboard-admin/pengumuman/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PengumumanAdmin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengumumanAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:05:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:05:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:05:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:05:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:05:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:05:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:05:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:05:31 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:05:31 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:06:41 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 88.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:06:41 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 94.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:06:51 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:06:51 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:06:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:06:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:06:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:06:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:06:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:07:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:07:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:07:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:07:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:07:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:08:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:08:26 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:26 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:26 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:26 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:26 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:08:28 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:28 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:28 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:28 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:28 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:08:30 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:30 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:30 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:30 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:30 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:08:41 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:41 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:41 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:41 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:41 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:08:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:08:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:08:44 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:44 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:44 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:44 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:08:44 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:09:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:09:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:09:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:09:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:09:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:10:03 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:03 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:03 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:03 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:03 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:10:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:10:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:10:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:10:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:10:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:22 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:10:23 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:10:25 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:25 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:25 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:25 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:10:25 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:12:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\pengumuman\index.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\pengumuman\\index.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/pengumuman/index', [], true)
+ 4 APPPATH\Controllers\PengumumanAdmin.php(38): view('dashboard-admin/pengumuman/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PengumumanAdmin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengumumanAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:12:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\pengumuman\index.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\pengumuman\\index.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/pengumuman/index', [], true)
+ 4 APPPATH\Controllers\PengumumanAdmin.php(38): view('dashboard-admin/pengumuman/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PengumumanAdmin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengumumanAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:12:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\pengumuman\index.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\pengumuman\\index.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/pengumuman/index', [], true)
+ 4 APPPATH\Controllers\PengumumanAdmin.php(38): view('dashboard-admin/pengumuman/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PengumumanAdmin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengumumanAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:12:53 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:12:53 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:12:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 88.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:12:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 94.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:13:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:13:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:13:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 88.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:13:18 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 94.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:20:01 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 88.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:20:01 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 94.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:27:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:27:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:27:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:27:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:27:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:27:21 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\AlumniAdmin.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:37:53 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\activation.php on line 49.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\activation.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/activation', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(408): view('dashboard-admin/alumni/activation', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->activation()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:37:53 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\alumni\activation.php on line 52.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\alumni\\activation.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/alumni/activation', [], true)
+ 4 APPPATH\Controllers\AlumniAdmin.php(408): view('dashboard-admin/alumni/activation', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AlumniAdmin->activation()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumniAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:45:31 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:45:31 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-23 09:45:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 88.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-23 09:45:32 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 94.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(104): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('3')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 09:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-23 09:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,125 @@
+INFO - 2023-12-08 13:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 13:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 13:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 13:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 13:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-08 13:43:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:43:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:43:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:43:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:43:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:43:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 13:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-08 13:43:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(196): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('6')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:43:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 94.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(196): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('6')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:43:58 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 100.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(196): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('6')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 13:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 13:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-08 13:44:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:44:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:44:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:44:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:44:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:44:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\KuesionerAdmin.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->ajax()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 13:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-08 13:44:04 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 64.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(196): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('4')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:44:04 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 94.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(196): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('4')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-08 13:44:04 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Views\dashboard-admin\kuesioner\details.php on line 100.
+ 1 SYSTEMPATH\View\View.php(228): include('C:\\Users\\wanad\\xampp8\\htdocs\\traceralumnisi-ci4\\admin-ci4\\app\\Views\\dashboard-admin\\kuesioner\\details.php')
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard-admin/kuesioner/details', [], true)
+ 4 APPPATH\Controllers\KuesionerAdmin.php(196): view('dashboard-admin/kuesioner/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KuesionerAdmin->details('4')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KuesionerAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-08 14:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-08 14:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
