@@ -26,9 +26,13 @@ On the command line (the terminal)
   - Password can be changed in [http://localhost/html/settings/changepassword ](http://localhost/html/settings/changepassword)
 - View phpMyAdmin at [http://pma.localhost ](http://pma.localhost)
   - Type in the db user name `root` and db password to log in `12345`
-  - You can change the password of MySQL database in the `docker-compose.yml` file if you want
+  - You can change the password of MySQL database in the `docker-compose.yml` file.
     ```
       MYSQL_ROOT_PASSWORD: "12345"
+    ```
+    and in the `www/system/.env` file.
+    ```
+      database.default.password = 12345
     ```
 
 ## General Notes
@@ -40,13 +44,25 @@ On the command line (the terminal)
   - The line in the `docker-compose.yml` file referencing `pec_permintaanmakanan_nodb.sql` is used to seed the database `pec_permintaanmakanan` with a database, tables, and data of this application. The `dbdata` folder will need to be deleted first. This works best if using a mysql dump file. Otherwise, the sql file just needs to have valid SQL statments.
     - `- "./pec_permintaanmakanan_nodb.sql:/docker-entrypoint-initdb.d/pec_permintaanmakanan_nodb.sql"`
     - `MYSQL_DATABASE: "pec_permintaanmakanan"`
-- To change the server's port. You can modify the ports section on `docker-compose.yml`.
+
+## Port Settings
+
+### Server's Port
+
+- From `docker-compose.yml`, modify these codes:
   ```
   ports:
     - "8081:80"
     - "8080:8080"
   ```
-- To change the mysql's port. You can modify the ports section on `docker-compose.yml`.
+- From `www/system/.env`, modify `app.baseURL` to include ports which has been previously set from `docker-compose.yml`
+  ```
+  app.baseURL = 'http://localhost:8081/'
+  ```
+
+### MySQL's Port
+
+- From `docker-compose.yml`, modify these codes:
   - From mysql:
     ```
     environment:
@@ -63,6 +79,10 @@ On the command line (the terminal)
       PMA_HOST: "mysql"
       PMA_PORT: "3390"
     ```
+- From `www/system/.env`, modify `database.default.hostname` to include ports which has been previously set from `docker-compose.yml`
+  ```
+  database.default.hostname = mysql:3390
+  ```
 
 ## Traefik Notes
 
