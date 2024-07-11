@@ -15,8 +15,6 @@ On the command line (the terminal)
   - `git clone https://github.com/hafizulwanandaputra/pec_permintaanmakanan_docker`
 - Change into the directory
   - `cd pec_permintaanmakanan_docker`
-- Create a new docker network
-  - `docker network create traefikNetwork`
 - Start the container
   - `docker compose up`
   - Or run it in the background to free up the terminal using `docker compose up -d`
@@ -42,12 +40,29 @@ On the command line (the terminal)
   - The line in the `docker-compose.yml` file referencing `pec_permintaanmakanan_nodb.sql` is used to seed the database `pec_permintaanmakanan` with a database, tables, and data of this application. The `dbdata` folder will need to be deleted first. This works best if using a mysql dump file. Otherwise, the sql file just needs to have valid SQL statments.
     - `- "./pec_permintaanmakanan_nodb.sql:/docker-entrypoint-initdb.d/pec_permintaanmakanan_nodb.sql"`
     - `MYSQL_DATABASE: "pec_permintaanmakanan"`
-- To change the port. You can modify the ports section on `docker-compose.yml`.
+- To change the server's port. You can modify the ports section on `docker-compose.yml`.
   ```
   ports:
     - "8081:80"
     - "8080:8080"
   ```
+- To change the mysql's port. You can modify the ports section on `docker-compose.yml`.
+  - From mysql:
+    ```
+    environment:
+      ...
+      MYSQL_TCP_PORT: 3390
+    ports:
+      - 3390:3390
+    expose:
+      - 3390
+    ```
+  - From phpmyadmin:
+    ```
+    environment:
+      PMA_HOST: "mysql"
+      PMA_PORT: "3390"
+    ```
 
 ## Traefik Notes
 
