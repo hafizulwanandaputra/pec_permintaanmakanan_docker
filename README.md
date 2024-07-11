@@ -21,10 +21,10 @@ On the command line (the terminal)
 - To stop the containers
   - press <kbd>ctrl</kbd> + <kbd>C</kbd>
   - then run `docker compose down`
-- View the web pages at [http://localhost/html/ ](http://localhost/html)
+- View the web pages at [http://localhost:8081/html/ ](http://localhost:8081/html)
   - Type the username `admin` and password `12345`
-  - Password can be changed in [http://localhost/html/settings/changepassword ](http://localhost/html/settings/changepassword)
-- View phpMyAdmin at [http://pma.localhost ](http://pma.localhost)
+  - Password can be changed in [http://localhost:8081/html/settings/changepassword ](http://localhost:8081/html/settings/changepassword)
+- View phpMyAdmin at [http://pma.localhost:8081 ](http://pma.localhost:8081)
   - Type in the db user name `root` and db password to log in `12345`
   - You can change the password of MySQL database in the `docker-compose.yml` file.
     ```
