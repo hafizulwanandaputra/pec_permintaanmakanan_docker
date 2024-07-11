@@ -54,7 +54,7 @@ This uses the Traefik image from here: https://hub.docker.com/_/traefik/
 
 - Documentation is here: https://doc.traefik.io/traefik/
 - You can have multiple domains and subdomains pointing to a single container using the Hosts line in the label section of `docker-compose.yml`
-  - `- "traefik.http.routers.php-apache.rule=Host(`localhost`, `127.0.0.1`)"`
+  - `` - "traefik.http.routers.php-apache.rule=Host(`localhost`, `127.0.0.1`)" ``
 
 ## PHP Settings
 
