@@ -14,7 +14,7 @@ services:
 
   php-apache:
     build:
-      context: "pec_permintaanmakanan"
+      context: .
     depends_on:
       - "traefik"
       - "mysql"
