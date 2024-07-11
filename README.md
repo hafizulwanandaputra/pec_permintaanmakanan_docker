@@ -42,6 +42,12 @@ On the command line (the terminal)
   - The line in the `docker-compose.yml` file referencing `pec_permintaanmakanan_nodb.sql` is used to seed the database `pec_permintaanmakanan` with a database, tables, and data of this application. The `dbdata` folder will need to be deleted first. This works best if using a mysql dump file. Otherwise, the sql file just needs to have valid SQL statments.
     - `- "./pec_permintaanmakanan_nodb.sql:/docker-entrypoint-initdb.d/pec_permintaanmakanan_nodb.sql"`
     - `MYSQL_DATABASE: "pec_permintaanmakanan"`
+- To change the port. You can modify the ports section on `docker-compose.yml`.
+  ```
+  ports:
+    - "8081:80"
+    - "8080:8080"
+  ```
 
 ## Traefik Notes
 
