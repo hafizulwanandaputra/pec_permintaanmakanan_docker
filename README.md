@@ -18,13 +18,20 @@ On the command line (the terminal)
 - Start the container
   - `docker compose up`
   - Or run it in the background to free up the terminal using `docker compose up -d`
+- Install composer and copy `.env` file
+  - Run `docker exec -it pec_permintaanmakanan_docker-php-apache-1 /bin/bash`
+  - Run `cd ..`
+  - Run `cd system`
+  - Run `composer install`
+  - Run `cp .env.example .env`
+  - Run `exit`
 - To stop the containers
   - press <kbd>ctrl</kbd> + <kbd>C</kbd>
   - then run `docker compose down`
-- View the web pages at [http://localhost:8081/html/ ](http://localhost:8081/html)
+- View the web pages at [http://localhost:8088/html/ ](http://localhost:8088/html)
   - Type the username `admin` and password `12345`
-  - Password can be changed in [http://localhost:8081/html/settings/changepassword ](http://localhost:8081/html/settings/changepassword)
-- View phpMyAdmin at [http://pma.localhost:8081 ](http://pma.localhost:8081)
+  - Password can be changed in [http://localhost:8088/html/settings/changepassword ](http://localhost:8088/html/settings/changepassword)
+- View phpMyAdmin at [http://pma.localhost:8088 ](http://pma.localhost:8088)
   - Type in the db user name `root` and db password to log in `12345`
   - You can change the password of MySQL database in the `docker-compose.yml` file.
     ```
@@ -52,12 +59,12 @@ On the command line (the terminal)
 - From `docker-compose.yml`, modify these codes:
   ```
   ports:
-    - "8081:80"
-    - "8080:8080"
+    - "8088:80"
+    - "8089:8089"
   ```
 - From `www/system/.env`, modify `app.baseURL` to include ports which has been previously set from `docker-compose.yml`
   ```
-  app.baseURL = 'http://localhost:8081/'
+  app.baseURL = 'http://localhost:8088/'
   ```
 
 ### MySQL's Port

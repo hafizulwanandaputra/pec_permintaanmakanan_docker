@@ -78,4 +78,4 @@ RUN docker-php-ext-install sysvsem
 RUN docker-php-ext-install sysvshm
 RUN docker-php-ext-install tidy
 RUN docker-php-ext-install xml
-RUN docker-php-ext-install xmlwriter   
+RUN docker-php-ext-install xmlwriter
