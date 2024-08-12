@@ -16,6 +16,7 @@ class Auth extends BaseController
     {
         $users = $this->AuthModel->orderBy('username', 'ASC')->findAll();
         $data = [
+            'title' => $this->systemName,
             'users' => $users,
             'agent' => $this->request->getUserAgent()
         ];
@@ -56,24 +57,13 @@ class Auth extends BaseController
                 session()->set('profilephoto', $check['profilephoto']);
                 session()->set('role', $check['role']);
                 session()->set('url', $url);
-                $db = db_connect();
-                $agent = $this->request->getUserAgent();
-                if ($agent->isRobot() == FALSE) {
-                    $ipaddress = $_SERVER['REMOTE_ADDR'];
-                    $useragent = $_SERVER['HTTP_USER_AGENT'];
-                    if ($agent->isMobile()) {
-                        $db->query('INSERT INTO `session_history` (`username`, `ipaddress`, `os`, `browser`, `mobile`, `activity`, `useragent`, `datetime`) VALUES ("' . session()->get('username') . '", "' . $ipaddress . '", "' . $agent->getPlatform() . '", "' . $agent->getBrowser() . ' ' . $agent->getVersion() . '", "' . $agent->getMobile() . '", "Login", "' . $useragent . '", UTC_TIMESTAMP())');
-                    } else {
-                        $db->query('INSERT INTO `session_history` (`username`, `ipaddress`, `os`, `browser`, `mobile`, `activity`, `useragent`, `datetime`) VALUES ("' . session()->get('username') . '", "' . $ipaddress . '", "' . $agent->getPlatform() . '", "' . $agent->getBrowser() . ' ' . $agent->getVersion() . '", NULL, "Login", "' . $useragent . '", UTC_TIMESTAMP())');
-                    }
-                }
                 return redirect()->to($url);
             } else {
-                session()->setFlashdata('error', 'Wrong password!');
+                session()->setFlashdata('error', 'Kata sandi salah');
                 return redirect()->back();
             }
         } else {
-            session()->setFlashdata('error', 'Username not registered!');
+            session()->setFlashdata('error', 'Akun tidak terdaftar');
             return redirect()->back();
         }
     }
@@ -81,16 +71,6 @@ class Auth extends BaseController
     public function logout()
     {
         $db = db_connect();
-        $agent = $this->request->getUserAgent();
-        if ($agent->isRobot() == FALSE) {
-            $ipaddress = $_SERVER['REMOTE_ADDR'];
-            $useragent = $_SERVER['HTTP_USER_AGENT'];
-            if ($agent->isMobile()) {
-                $db->query('INSERT INTO `session_history` (`username`, `ipaddress`, `os`, `browser`, `mobile`, `activity`, `useragent`, `datetime`) VALUES ("' . session()->get('username') . '", "' . $ipaddress . '", "' . $agent->getPlatform() . '", "' . $agent->getBrowser() . ' ' . $agent->getVersion() . '", "' . $agent->getMobile() . '", "Logout", "' . $useragent . '", UTC_TIMESTAMP())');
-            } else {
-                $db->query('INSERT INTO `session_history` (`username`, `ipaddress`, `os`, `browser`, `mobile`, `activity`, `useragent`, `datetime`) VALUES ("' . session()->get('username') . '", "' . $ipaddress . '", "' . $agent->getPlatform() . '", "' . $agent->getBrowser() . ' ' . $agent->getVersion() . '", NULL, "Logout", "' . $useragent . '", UTC_TIMESTAMP())');
-            }
-        }
         session()->remove('log');
         session()->remove('id_user');
         session()->remove('fullname');
@@ -99,7 +79,7 @@ class Auth extends BaseController
         session()->remove('profilephoto');
         session()->remove('role');
         session()->remove('url');
-        session()->setFlashdata('msg', 'Logout successful! Thank you!');
+        session()->setFlashdata('msg', 'Berhasil keluar');
         return redirect()->to(base_url());
     }
 }

@@ -12,77 +12,30 @@ $tanggal_lahir = Time::parse($permintaan['tanggal_lahir']);
         Gizi PEC
     </footer>
     <div style="font-family: sans-serif;">
-        <h4 style=" margin: 0;">E-tiket Makanan Pasien Rawat Inap</h4>
-        <hr style="margin-top: 3px; margin-bottom: 3px;">
-        <div style="font-size: 7pt;">
+        <div style="font-size: 14pt;">
             <table class="table table-borderless" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>
+                            <img src="data:image/png;base64,<?= base64_encode(file_get_contents(FCPATH . 'assets/images/logo_pec.png')) ?>" width="64px" alt="">
+                        </th>
+                        <th>
+                            <span style=" margin: 0;">ETIKET MAKANAN PASIEN</span>
+                        </th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Tanggal</td>
-                        <td style="padding: 0; width: 70%;" class="date"><?= $tanggal->toLocalizedString('d MMMM yyyy'); ?></td>
+                        <td style="vertical-align: top; padding: 0; width: 30%; font-weight: bold;" scope="row">Nama<br><br></td>
+                        <td style="vertical-align: top; padding: 0; width: 70%;" class="date"><?= $permintaan['nama_pasien']; ?></td>
                     </tr>
                     <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Nama Menu</td>
-                        <td style="padding: 0; width: 70%;" class="date"><?= $permintaan['nama_menu']; ?></td>
+                        <td style="vertical-align: top; padding: 0; width: 30%; font-weight: bold;" scope="row">Tgl. Lahir<br><br></td>
+                        <td style="vertical-align: top; padding: 0; width: 70%;"><?= $tanggal_lahir->toLocalizedString('d MMMM yyyy'); ?></td>
                     </tr>
                     <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Protein Hewani</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['protein_hewani']; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Protein Nabati</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['protein_nabati']; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Sayur</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['sayur']; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Buah</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['buah']; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Jadwal Makan</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['jadwal_makan']; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Petugas</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['nama_petugas']; ?></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <hr style="margin-top: 3px; margin-bottom: 3px;">
-        <div style="font-size: 7pt;">
-            <table class="table table-borderless" style="width: 100%;">
-                <tbody>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Nama Pasien</td>
-                        <td style="padding: 0; width: 70%;" class="date"><?= $permintaan['nama_pasien']; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Tanggal Lahir dan Umur</td>
-                        <td style="padding: 0; width: 70%;"><?= $tanggal_lahir->toLocalizedString('d MMMM yyyy') . ' (' . $tanggal_lahir->getAge() . ' tahun)'; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Jenis Kelamin</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['jenis_kelamin']; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Kamar</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['kamar']; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Jenis Tindakan</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['jenis_tindakan']; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Diet</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['diet']; ?></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 0; width: 30%; font-weight: bold;" scope="row">Keterangan</td>
-                        <td style="padding: 0; width: 70%;"><?= $permintaan['keterangan']; ?></td>
+                        <td style="vertical-align: top; padding: 0; width: 30%; font-weight: bold;" scope="row">Ruangan<br><br></td>
+                        <td style="vertical-align: top; padding: 0; width: 70%;"><?= $permintaan['kamar']; ?></td>
                     </tr>
                 </tbody>
             </table>

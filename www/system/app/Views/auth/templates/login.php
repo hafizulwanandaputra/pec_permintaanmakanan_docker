@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sistem Permintaan Makanan Pasien Rawat Inap RSKM PEC</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title><?= $title; ?></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://getbootstrap.com/docs/5.3/examples/sign-in/sign-in.css" rel="stylesheet">
   <link href="<?= base_url(); ?>assets_public/fontawesome/css/all.css" rel="stylesheet">
   <link href="<?= base_url(); ?>assets_public/css/main.css" rel="stylesheet">
@@ -13,13 +13,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+Arabic:wdth,wght@62.5..100,100..900&family=Noto+Sans+Mono:wdth,wght@62.5..100,100..900&family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
-  <?php if ($agent->getPlatform() == 'Mac OS X' || $agent->getPlatform() == 'iOS' || $agent->getPlatform() == 'iPadOS') : ?>
-    <link href="<?= base_url(); ?>assets_public/fonts/base-font/apple.css" rel="stylesheet">
-  <?php else : ?>
-    <link rel="stylesheet" href="<?= base_url(); ?>assets_public/fonts/Inter/inter.css">
-    <link href="<?= base_url(); ?>assets_public/fonts/jetbrains-mono/jetbrains-mono.css" rel="stylesheet">
-    <link href="<?= base_url(); ?>assets_public/fonts/base-font/non-apple.css" rel="stylesheet">
-  <?php endif; ?>
+  <link href="<?= base_url(); ?>assets_public/fonts/Geist-1.3.0/font-face.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets_public/fonts/GeistMono-1.3.0/font-face.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets_public/fonts/base-font/geist.css" rel="stylesheet">
   <style>
     .form-signin .username {
       margin-bottom: -1px;
@@ -45,6 +41,7 @@
       }
     }
   </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 
 <body class="d-flex align-items-center py-4 text-center" id="background" style="background-color: #5eba00;">
@@ -52,8 +49,27 @@
   <?= $this->renderSection('content'); ?>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="<?= base_url(); ?>assets_public/fontawesome/js/all.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('input.form-control').on('input', function() {
+        // Remove the is-invalid class for the current input field
+        $(this).removeClass('is-invalid');
+        // Hide the invalid-feedback message for the current input field
+        $(this).siblings('.invalid-feedback').hide();
+      });
+      $(document).on('click', '#loginBtn', function(e) {
+        e.preventDefault();
+        $('#loginForm').submit();
+        $('input').prop('disabled', true).removeClass('is-invalid');
+        $('#loginBtn').prop('disabled', true).html(`
+          <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+          <span role="status">SILAKAN TUNGGU...</span>
+        `);
+      });
+    });
+  </script>
   <script>
     /*!
      * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)

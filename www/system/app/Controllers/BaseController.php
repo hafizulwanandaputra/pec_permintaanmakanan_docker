@@ -44,6 +44,13 @@ abstract class BaseController extends Controller
     // protected $session;
 
     /**
+     * System name property.
+     *
+     * @var string
+     */
+    protected $systemName = "Sistem Permintaan Makanan Pasien Rawat Inap RSKM PEC";
+
+    /**
      * @return void
      */
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)

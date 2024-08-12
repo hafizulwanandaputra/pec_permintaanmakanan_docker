@@ -15,7 +15,8 @@ class ChangePassword extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Ubah Kata Sandi',
+            'title' => 'Ubah Kata Sandi - ' . $this->systemName,
+            'headertitle' => 'Ubah Kata Sandi',
             'agent' => $this->request->getUserAgent()
         ];
         return view('dashboard/changepassword/index', $data);
@@ -66,17 +67,6 @@ class ChangePassword extends BaseController
                     'id_user' => session()->get('id_user'),
                     'password' => $password_hash
                 ]);
-                $db = db_connect();
-                $agent = $this->request->getUserAgent();
-                if ($agent->isRobot() == FALSE) {
-                    $ipaddress = $_SERVER['REMOTE_ADDR'];
-                    $useragent = $_SERVER['HTTP_USER_AGENT'];
-                    if ($agent->isMobile()) {
-                        $db->query('INSERT INTO `session_history` (`username`, `ipaddress`, `os`, `browser`, `mobile`, `activity`, `useragent`, `datetime`) VALUES ("' . session()->get('username') . '", "' . $ipaddress . '", "' . $agent->getPlatform() . '", "' . $agent->getBrowser() . ' ' . $agent->getVersion() . '", "' . $agent->getMobile() . '", "Mengganti kata sandi @' . session()->get('username') . '", "' . $useragent . '", UTC_TIMESTAMP())');
-                    } else {
-                        $db->query('INSERT INTO `session_history` (`username`, `ipaddress`, `os`, `browser`, `mobile`, `activity`, `useragent`, `datetime`) VALUES ("' . session()->get('username') . '", "' . $ipaddress . '", "' . $agent->getPlatform() . '", "' . $agent->getBrowser() . ' ' . $agent->getVersion() . '", NULL, "Mengganti kata sandi @' . session()->get('username') . '", "' . $useragent . '", UTC_TIMESTAMP())');
-                    }
-                }
                 session()->remove('password');
                 session()->set('password', $password_hash);
                 session()->setFlashdata('msg', 'Anda berhasil mengubah kata sandi baru Anda!');

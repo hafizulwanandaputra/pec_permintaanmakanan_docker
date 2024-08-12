@@ -14,10 +14,10 @@
         "codeigniter4/framework": "^4.0",
         "dompdf/dompdf": "^3.0",
         "firebase/php-jwt": "^6.10",
-        "phpoffice/phpspreadsheet": "^2.1"
+        "phpoffice/phpspreadsheet": "^2.1",
+        "kint-php/kint": "^5.1"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.9",
         "mikey179/vfsstream": "^1.6",
         "phpunit/phpunit": "^9.1"
     },

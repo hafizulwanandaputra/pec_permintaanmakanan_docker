@@ -1,7 +1,7 @@
 <?= $this->extend('dashboard/templates/dashboard'); ?>
 <?= $this->section('title'); ?>
 <div class="d-flex justify-content-start align-items-center">
-    <span class="fw-medium fs-5 flex-fill text-truncate"><?= $title; ?></span>
+    <span class="fw-medium fs-5 flex-fill text-truncate"><?= $headertitle; ?></span>
 </div>
 <div style="min-width: 1px; max-width: 1px;"></div>
 <?= $this->endSection(); ?>
@@ -38,19 +38,6 @@
     </ul>
     <h5>Sistem</h5>
     <ul class="list-group shadow-sm rounded-3 mb-3">
-        <li class="list-group-item p-1 list-group-item-action">
-            <div class="d-flex align-items-start">
-                <a href="<?= base_url('/settings/activities'); ?>" class="stretched-link" style="min-width: 48px; max-width: 48px; text-align: center;">
-                    <p class="mb-0" style="font-size: 1.75rem!important;"><i class="fa-solid fa-clock-rotate-left"></i></p>
-                </a>
-                <div class="align-self-center flex-fill ps-1 text-wrap overflow-hidden" style="text-overflow: ellipsis;">
-                    <h5 class="card-title">Riwayat Aktivitas</h5>
-                </div>
-                <div class="align-self-center" style="min-width: 48px; max-width: 48px; text-align: center;">
-                    <span class="text-body-tertiary"><i class="fa-solid fa-angle-right"></i></span>
-                </div>
-            </div>
-        </li>
         <li class="list-group-item p-1 list-group-item-action">
             <div class="d-flex align-items-start">
                 <a href="<?= base_url('/settings/about'); ?>" class="stretched-link" style="min-width: 48px; max-width: 48px; text-align: center;">

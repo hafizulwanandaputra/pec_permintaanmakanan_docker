@@ -5,7 +5,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content bg-body rounded-4 shadow-lg transparent-blur">
                 <div class="modal-body">
-                    <?= form_open('check-login'); ?>
+                    <?= form_open('check-login', 'id="loginForm"'); ?>
                     <img class="rounded-pill mb-2" src="<?= base_url('/assets/images/logo_pec.png'); ?>" width="96px" style="border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);">
                     <h1 class="h3 mb-2 fw-normal">
                         Sistem Informasi Permintaan Makanan Pasien Rawat Inap
@@ -41,12 +41,9 @@
                                 </div>
                             </div>
                         </label>
-                        <div class="invalid-feedback mb-2">
-                            <?= validation_show_error('username'); ?><br><?= validation_show_error('password'); ?>
-                        </div>
                     </div>
                     <input type="hidden" name="url" value="<?= (isset($_GET['redirect'])) ? base_url('/' . urldecode($_GET['redirect'])) : base_url('/home'); ?>">
-                    <button class="w-100 btn btn-lg btn-primary rounded-3 bg-gradient" type="submit">
+                    <button id="loginBtn" class="w-100 btn btn-lg btn-primary rounded-3 bg-gradient" type="submit">
                         <i class="fa-solid fa-right-to-bracket"></i> MASUK
                     </button>
                     <?= form_close(); ?>
@@ -80,7 +77,7 @@
                     <i class="fa-solid fa-circle-xmark"></i>
                 </div>
                 <div class="w-100 mx-2 text-start">
-                    Please login first before accessing "<?= urldecode($_GET['redirect']); ?>"
+                    Silakan masuk sebelum mengunjungi "<?= urldecode($_GET['redirect']); ?>"
                 </div>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
@@ -94,6 +91,19 @@
                 </div>
                 <div class="w-100 mx-2 text-start">
                     <?= session()->getFlashdata('error'); ?>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    <?php endif; ?>
+    <?php if (validation_show_error('username') || validation_show_error('password')) : ?>
+        <div class="toast fade show align-items-center text-bg-danger border border-danger rounded-3 transparent-blur" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body d-flex align-items-start">
+                <div style="width: 24px; text-align: center;">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="w-100 mx-2 text-start">
+                    Gagal masuk:<br><?= validation_show_error('username') ?><br><?= validation_show_error('password') ?>
                 </div>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>

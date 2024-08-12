@@ -4,9 +4,7 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function __construct()
-    {
-    }
+    public function __construct() {}
 
     public function index()
     {
@@ -83,7 +81,8 @@ class Home extends BaseController
             'permintaangraph' => $permintaangraph,
             'petugasgraph' => $petugasgraph,
             'txtgreeting' => $txtGreeting,
-            'title' => 'Beranda',
+            'title' => 'Beranda - ' . $this->systemName,
+            'headertitle' => 'Beranda',
             'agent' => $this->request->getUserAgent()
         ];
         return view('dashboard/home/index', $data);

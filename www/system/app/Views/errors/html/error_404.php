@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.78.1">
-    <title><?= lang('Errors.pageNotFound') ?> - HWPweb - Hafizul Wananda Putra Web</title>
+    <title><?= lang('Errors.pageNotFound') ?></title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
 

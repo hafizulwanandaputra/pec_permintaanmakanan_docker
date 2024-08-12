@@ -2,7 +2,7 @@
 <?= $this->section('title'); ?>
 <div class="d-flex justify-content-start align-items-center">
     <a class="fs-5 me-3 link-body-emphasis" href="<?= base_url('/settings'); ?>"><i class="fa-solid fa-arrow-left"></i></a>
-    <span class="fw-medium fs-5 flex-fill text-truncate"><?= $title; ?></span>
+    <span class="fw-medium fs-5 flex-fill text-truncate"><?= $headertitle; ?></span>
 </div>
 <div style="min-width: 1px; max-width: 1px;"></div>
 <?= $this->endSection(); ?>
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <?= form_open_multipart('/settings/changepassword/update'); ?>
+    <?= form_open_multipart('/settings/changepassword/update', 'id="changePasswordForm"'); ?>
     <fieldset class="border rounded-3 px-2 py-0">
         <legend class="float-none w-auto mb-0 px-1 fs-6 fw-bold">Kata Sandi Lama</legend>
         <div class="form-floating mb-2">
@@ -45,10 +45,31 @@
     </fieldset>
     <hr>
     <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
-        <button class="btn btn-primary rounded-3 bg-gradient" type="submit"><i class="fa-solid fa-pen-to-square"></i> Ubah</button>
+        <button class="btn btn-primary rounded-3 bg-gradient" type="submit" id="submitBtn"><i class="fa-solid fa-pen-to-square"></i> Ubah</button>
     </div>
     <?= form_close(); ?>
 </main>
 </div>
 </div>
+<?= $this->endSection(); ?>
+<?= $this->section('javascript'); ?>
+<script>
+    $(document).ready(function() {
+        $('input.form-control').on('input', function() {
+            // Remove the is-invalid class for the current input field
+            $(this).removeClass('is-invalid');
+            // Hide the invalid-feedback message for the current input field
+            $(this).siblings('.invalid-feedback').hide();
+        });
+        $(document).on('click', '#submitBtn', function(e) {
+            e.preventDefault();
+            $('#changePasswordForm').submit();
+            $('input').prop('disabled', true);
+            $('#submitBtn').prop('disabled', true).html(`
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span role="status">Processing, please wait...</span>
+            `);
+        });
+    });
+</script>
 <?= $this->endSection(); ?>

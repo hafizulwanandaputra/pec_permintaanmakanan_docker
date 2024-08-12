@@ -1,7 +1,7 @@
 <?= $this->extend('dashboard/templates/dashboard'); ?>
 <?= $this->section('title'); ?>
 <div class="d-flex justify-content-start align-items-center">
-    <span class="fw-medium fs-5 flex-fill text-truncate"><?= $title; ?></span>
+    <span class="fw-medium fs-5 flex-fill text-truncate"><?= $headertitle; ?></span>
 </div>
 <div style="min-width: 1px; max-width: 1px;"></div>
 <?= $this->endSection(); ?>
@@ -88,11 +88,7 @@
         Chart.defaults.backgroundColor = "rgba(255,255,0,0.1)";
         Chart.defaults.elements.line.borderColor = "rgba(255,255,0,0.4)";
     }
-    <?php if ($agent->getPlatform() == 'Mac OS X' || $agent->getPlatform() == 'iOS' || $agent->getPlatform() == 'iPadOS') : ?>
-        Chart.defaults.font.family = 'system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans", "Noto Sans Arabic", "Apple Color Emoji", sans-serif;';
-    <?php else : ?>
-        Chart.defaults.font.family = 'Inter, system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans", "Noto Sans Arabic", "Noto Color Emoji", sans-serif';
-    <?php endif; ?>
+    Chart.defaults.font.family = 'Geist, system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans", "Noto Sans Arabic", "Noto Color Emoji", sans-serif';
     const data_permintaangraph = [];
     const label_permintaangraph = [];
     const data_petugasgraph = [];

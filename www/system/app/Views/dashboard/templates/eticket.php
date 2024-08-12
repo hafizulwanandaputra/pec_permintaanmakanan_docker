@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $title; ?> - Sistem Permintaan Makanan Pasien Rawat Inap RSKM PEC</title>
     <link href="<?= base_url(); ?>assets_public/fontawesome/css/all.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <style>
         @page {
             size: 10.5cm 7.4cm;

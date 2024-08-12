@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= $title; ?> - Sistem Permintaan Makanan Pasien Rawat Inap RSKM PEC</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title><?= $title; ?></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="<?= base_url(); ?>assets/css/dashboard/dashboard.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets_public/css/main.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets_public/css/JawiDubai.css" rel="stylesheet">
@@ -14,16 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+Arabic:wdth,wght@62.5..100,100..900&family=Noto+Sans+Mono:wdth,wght@62.5..100,100..900&family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
-    <?php if ($agent->getPlatform() == 'Mac OS X' || $agent->getPlatform() == 'iOS' || $agent->getPlatform() == 'iPadOS') : ?>
-        <link href="<?= base_url(); ?>assets_public/fonts/base-font/apple.css" rel="stylesheet">
-    <?php else : ?>
-        <link rel="stylesheet" href="<?= base_url(); ?>assets_public/fonts/Inter/inter.css">
-        <link href="<?= base_url(); ?>assets_public/fonts/jetbrains-mono/jetbrains-mono.css" rel="stylesheet">
-        <link href="<?= base_url(); ?>assets_public/fonts/base-font/non-apple.css" rel="stylesheet">
-    <?php endif; ?>
+    <link href="<?= base_url(); ?>assets_public/fonts/Geist-1.3.0/font-face.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets_public/fonts/GeistMono-1.3.0/font-face.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets_public/fonts/base-font/geist.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets_public/fontawesome/css/all.css" rel="stylesheet">
     <script src="<?= base_url(); ?>assets/tinymce/js/tinymce/tinymce.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <style>
         .toast-container {
             padding-top: 4rem !important;
@@ -37,7 +33,7 @@
         }
 
         .profilephotosidebar {
-            background-image: url('<?= (session()->get('profilephoto') == NULL) ? base_url() . 'assets/images/profile/blank.jpg' : base_url() . 'assets/images/profile/' . session()->get('profilephoto'); ?>');
+            background-image: url('<?= base_url() . 'assets/images/profile/blank.jpg'; ?>');
             background-color: var(--bs-gray-500);
             width: 64px;
             aspect-ratio: 1/1;
@@ -115,12 +111,12 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="d-flex flex-nowrap w-100 align-items-center">
-            <div class="w-100 px-3 text-truncate">
+            <div class="w-100 ps-3 pe-1 text-truncate">
                 <?= $this->renderSection('title'); ?>
             </div>
             <div class="navbar-nav">
                 <div class="nav-item text-nowrap">
-                    <button type="button" class="btn btn-light btn-sm mx-3 my-2 rounded-3 bg-gradient d-inline-block" data-bs-toggle="modal" data-bs-target="#logoff1">
+                    <button type="button" class="btn btn-light btn-sm mx-3 my-2 rounded-3 bg-gradient d-inline-block" data-bs-toggle="modal" data-bs-target="#logoutModal">
                         <i class="fa-solid fa-right-from-bracket"></i> Keluar
                     </button>
                 </div>
@@ -128,15 +124,15 @@
         </div>
     </header>
 
-    <div class="modal modal-sheet p-4 py-md-5 fade" id="logoff1" tabindex="-1" aria-labelledby="logoff1" aria-hidden="true" role="dialog">
+    <div class="modal modal-sheet p-4 py-md-5 fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModal" aria-hidden="true" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content bg-body rounded-4 shadow-lg transparent-blur">
                 <div class="modal-body p-4 text-center">
-                    <h5 class="mb-0">Apakah Anda ingin keluar?</h5>
+                    <h5 class="mb-0" id="logoutMessage">Apakah Anda ingin keluar?</h5>
                 </div>
                 <div class="modal-footer flex-nowrap p-0" style="border-top: 1px solid var(--bs-border-color-translucent);">
                     <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" data-bs-dismiss="modal" style="border-right: 1px solid var(--bs-border-color-translucent);">Tidak</button>
-                    <a class=" btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" href="<?= base_url('/logout'); ?>">Ya</a>
+                    <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" id="confirmLogout" onclick="window.location.href='<?= base_url('/logout'); ?>';">Yes</a>
                 </div>
             </div>
         </div>
@@ -170,6 +166,18 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link p-2" href="<?= base_url('/petugas'); ?>">
+                                <div class="d-flex align-items-start link-body-emphasis">
+                                    <div style="min-width: 24px; max-width: 24px; text-align: center;">
+                                        <i class="fa-solid fa-user-nurse"></i>
+                                    </div>
+                                    <div class="flex-fill ms-2">
+                                        Petugas Gizi
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link p-2" href="<?= base_url('/menu'); ?>">
                                 <div class="d-flex align-items-start link-body-emphasis">
                                     <div style="min-width: 24px; max-width: 24px; text-align: center;">
@@ -189,18 +197,6 @@
                                     </div>
                                     <div class="flex-fill ms-2">
                                         Permintaan
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-2" href="<?= base_url('/petugas'); ?>">
-                                <div class="d-flex align-items-start link-body-emphasis">
-                                    <div style="min-width: 24px; max-width: 24px; text-align: center;">
-                                        <i class="fa-solid fa-user-nurse"></i>
-                                    </div>
-                                    <div class="flex-fill ms-2">
-                                        Petugas Gizi
                                     </div>
                                 </div>
                             </a>
@@ -241,7 +237,7 @@
             </nav>
 
             <?= $this->renderSection('content'); ?>
-            <div class="toast-container position-fixed top-0 p-3">
+            <div id="toastContainer" class="toast-container position-fixed top-0 p-3">
                 <?php if (session()->getFlashdata('info')) : ?>
                     <div class="toast fade show align-items-center text-bg-info border border-info rounded-3 transparent-blur" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-body d-flex align-items-start">
@@ -281,9 +277,10 @@
                         </div>
                     </div>
                 <?php endif; ?>
+                <?= $this->renderSection('toast'); ?>
             </div>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
             <script src="<?= base_url(); ?>assets_public/fontawesome/js/all.js"></script>
             <script src="<?= base_url(); ?>assets/js/dashboard/dashboard.js"></script>
@@ -292,6 +289,12 @@
             <?= $this->renderSection('tinymce'); ?>
             <?= $this->renderSection('chartjs'); ?>
             <?= $this->renderSection('imgupload'); ?>
+            <script>
+                $(document).on('click', '#confirmLogout', function() {
+                    $('#logoutModal button').prop('disabled', true);
+                    $('#logoutMessage').html(`Silakan tunggu...`);
+                });
+            </script>
             <script>
                 /*!
                  * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
