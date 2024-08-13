@@ -42,6 +42,10 @@ On the command line (the terminal)
       database.default.password = 12345
     ```
 
+### Saved Docker Image
+
+[Download the image here](https://drive.google.com/file/d/1BwqKhAvlpO6a1iYQwWfgP0hWfY-MlMYS/view?usp=sharing), save it to this repository's directory, and run `docker load -i pec_permintaanmakanan_docker-php-apache.tar` to load the image. Use this if you have a trouble to build an image due to blocked connections when executing `apt update`.
+
 ## General Notes
 
 - This will run four containers: a proxy container, a PHP-Apache container, a MySQL container and a phpMyAdmin container.
