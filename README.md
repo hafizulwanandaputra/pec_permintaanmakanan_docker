@@ -60,11 +60,10 @@ On the command line (the terminal)
 
 ### Server's Port
 
-- From `docker-compose.yml`, modify these codes:
+- From `docker-compose.yml`, modify these codes inside `php-apache`:
   ```
   ports:
     - "8088:80"
-    - "8089:8089"
   ```
 - From `www/system/.env`, modify `app.baseURL` to include ports which has been previously set from `docker-compose.yml`
   ```
