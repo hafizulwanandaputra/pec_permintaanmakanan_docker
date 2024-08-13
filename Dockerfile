@@ -1,5 +1,12 @@
 FROM php:8.2-apache
 
+# Manually create /etc/apt/sources.list if it doesn't exist
+RUN echo 'deb http://cdn-fastly.deb.debian.org/debian bookworm main' > /etc/apt/sources.list
+
+# Optional: Add additional repositories if needed
+RUN echo 'deb http://security.debian.org/debian-security bookworm-security main' >> /etc/apt/sources.list
+RUN echo 'deb http://cdn-fastly.deb.debian.org/debian bookworm-updates main' >> /etc/apt/sources.list
+
 RUN apt update
 RUN apt upgrade -y
 RUN apt install -y apt-utils

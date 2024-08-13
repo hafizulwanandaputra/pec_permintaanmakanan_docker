@@ -38,6 +38,20 @@
             </div>
         </div>
     </div>
+    <div class="modal modal-sheet p-4 py-md-5 fade" id="resetPasswordModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="resetPasswordModalLabel" aria-hidden="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-body rounded-4 shadow-lg transparent-blur">
+                <div class="modal-body p-4 text-center">
+                    <h5 id="resetPasswordMessage"></h5>
+                    <h6 class="mb-0" id="resetPasswordSubmessage"></h6>
+                </div>
+                <div class="modal-footer flex-nowrap p-0" style="border-top: 1px solid var(--bs-border-color-translucent);">
+                    <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end" style="border-right: 1px solid var(--bs-border-color-translucent)!important;" data-bs-dismiss="modal">Tidak</button>
+                    <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" id="confirmResetPasswordBtn">Ya</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="userModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable rounded-3">
             <form id="userForm" enctype="multipart/form-data" class="modal-content bg-body shadow-lg transparent-blur">
@@ -262,8 +276,9 @@
                     data: null,
                     render: function(data, type, row) {
                         return `<div class="btn-group" role="group">
-                                    <button class="btn btn-secondary text-nowrap bg-gradient rounded-start-3 edit-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id_user}"><i class="fa-solid fa-pen-to-square"></i></button>
-                                    <button class="btn btn-danger text-nowrap bg-gradient rounded-end-3 delete-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id_user}" data-username="${row.username}"><i class="fa-solid fa-trash"></i></button>
+                                    <button class="btn btn-warning text-nowrap bg-gradient rounded-start-3 resetpwd-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id_user}" data-username="${row.username}"data-bs-toggle="tooltip" data-bs-title="Atur ulang kata sandi"><i class="fa-solid fa-key"></i></button>
+                                    <button class="btn btn-secondary text-nowrap bg-gradient edit-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id_user}" data-bs-toggle="tooltip" data-bs-title="Edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <button class="btn btn-danger text-nowrap bg-gradient rounded-end-3 delete-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id_user}" data-username="${row.username}" data-bs-toggle="tooltip" data-bs-title="Hapus"><i class="fa-solid fa-trash"></i></button>
                                 </div>`;
                     }
                 },
@@ -290,6 +305,12 @@
                 "target": [2, 3],
                 "width": "50%"
             }],
+        });
+        // Initialize Bootstrap tooltips
+        $('[data-bs-toggle="tooltip"]').tooltip();
+        // Re-initialize tooltips on table redraw (server-side events like pagination, etc.)
+        table.on('draw', function() {
+            $('[data-bs-toggle="tooltip"]').tooltip();
         });
         // Show add user modal
         $('#addUserBtn').click(function() {
@@ -336,6 +357,14 @@
             $('#deleteModal').modal('show');
         });
 
+        $(document).on('click', '.resetpwd-btn', function() {
+            userId = $(this).data('id');
+            userName = $(this).data('username');
+            $('#resetPasswordMessage').html(`Atur ulang kata sandi @` + userName + `?`);
+            $('#resetPasswordSubmessage').html(`Kata sandi pengguna ini akan diatur sama dengan nama pengguna`);
+            $('#resetPasswordModal').modal('show');
+        });
+
         // Confirm deletion
         $('#confirmDeleteBtn').click(function() {
             $('#deleteModal button').prop('disabled', true);
@@ -353,6 +382,29 @@
                 complete: function() {
                     $('#deleteModal').modal('hide');
                     $('#deleteModal button').prop('disabled', false);
+                }
+            });
+        });
+        // Confirm reset password
+        $('#confirmResetPasswordBtn').click(function() {
+            $('#resetPasswordModal button').prop('disabled', true);
+            $('#resetPasswordMessage').addClass('mb-0').html(`Mengatur ulang kata sandi, silakan tunggu...`);
+            $('#resetPasswordSubmessage').hide();
+            $.ajax({
+                url: '<?= base_url('/admin/resetpassword') ?>/' + userId,
+                type: 'POST',
+                success: function(response) {
+                    showSuccessToast(response.message);
+                    table.ajax.reload();
+                },
+                error: function(xhr, status, error) {
+                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+                },
+                complete: function() {
+                    $('#resetPasswordModal').modal('hide');
+                    $('#resetPasswordMessage').removeClass('mb-0');
+                    $('#resetPasswordSubmessage').show();
+                    $('#resetPasswordModal button').prop('disabled', false);
                 }
             });
         });

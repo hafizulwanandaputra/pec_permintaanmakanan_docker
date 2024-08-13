@@ -168,6 +168,18 @@ class Admin extends BaseController
         }
     }
 
+    public function resetpassword($id)
+    {
+        if (session()->get('role') == 'Master Admin') {
+            $db = db_connect();
+            $user = $this->AuthModel->find($id);
+            $db->table('user')->set('password', password_hash($user['username'], PASSWORD_DEFAULT))->where('id_user', $id)->update();
+            return $this->response->setJSON(['success' => true, 'message' => 'Kata sandi admin berhasil diatur ulang']);
+        } else {
+            throw PageNotFoundException::forPageNotFound();
+        }
+    }
+
     public function delete($id)
     {
         if (session()->get('role') == 'Master Admin') {

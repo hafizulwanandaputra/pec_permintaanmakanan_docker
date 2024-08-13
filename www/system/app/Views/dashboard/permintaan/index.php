@@ -420,9 +420,9 @@
                     data: null,
                     render: function(data, type, row) {
                         return `<div class="btn-group" role="group">
-                                    <button class="btn btn-info text-nowrap bg-gradient rounded-start-3 details-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id}"><i class="fa-solid fa-circle-info"></i></button>
-                                    <button class="btn btn-secondary text-nowrap bg-gradient edit-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id}"><i class="fa-solid fa-pen-to-square"></i></button>
-                                    <button class="btn btn-danger text-nowrap bg-gradient rounded-end-3 delete-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id}" data-name="${row.nama_pasien}"><i class="fa-solid fa-trash"></i></button>
+                                    <button class="btn btn-info text-nowrap bg-gradient rounded-start-3 details-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id}" data-bs-toggle="tooltip" data-bs-title="Detail"><i class="fa-solid fa-circle-info"></i></button>
+                                    <button class="btn btn-secondary text-nowrap bg-gradient edit-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id}" data-bs-toggle="tooltip" data-bs-title="Edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <button class="btn btn-danger text-nowrap bg-gradient rounded-end-3 delete-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id}" data-name="${row.nama_pasien}" data-bs-toggle="tooltip" data-bs-title="Hapus"><i class="fa-solid fa-trash"></i></button>
                                 </div>`;
                     }
                 },
@@ -485,6 +485,12 @@
                 "target": [3, 4, 5, 9, 10, 11],
                 "width": "12.5%"
             }]
+        });
+        // Initialize Bootstrap tooltips
+        $('[data-bs-toggle="tooltip"]').tooltip();
+        // Re-initialize tooltips on table redraw (server-side events like pagination, etc.)
+        table.on('draw', function() {
+            $('[data-bs-toggle="tooltip"]').tooltip();
         });
         $.ajax({
             url: '<?= base_url('permintaan/menuoptions') ?>', // Replace with your actual controller/method URL

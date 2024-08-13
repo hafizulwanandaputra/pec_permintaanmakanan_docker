@@ -51,7 +51,7 @@
             $('input').prop('disabled', true);
             $('#submitBtn').prop('disabled', true).html(`
                 <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-                <span role="status">Mengubah...</span>
+                <span role="status">Mengubah, silakan tunggu...</span>
             `);
         });
     });

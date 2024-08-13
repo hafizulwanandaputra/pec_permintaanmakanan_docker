@@ -298,9 +298,9 @@
                     data: null,
                     render: function(data, type, row) {
                         return `<div class="btn-group" role="group">
-                                    <a class="btn btn-info text-nowrap bg-gradient rounded-start-3" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" href="<?= base_url('/menu/details') ?>/${row.id_menu}" role="button"><i class="fa-solid fa-circle-info"></i></a>
-                                    <button class="btn btn-secondary text-nowrap bg-gradient edit-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id_menu}"><i class="fa-solid fa-pen-to-square"></i></button>
-                                    <button class="btn btn-danger text-nowrap bg-gradient rounded-end-3 delete-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id_menu}" data-name="${row.nama_petugas}"><i class="fa-solid fa-trash"></i></button>
+                                    <a class="btn btn-info text-nowrap bg-gradient rounded-start-3" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" href="<?= base_url('/menu/details') ?>/${row.id_menu}" role="button" data-bs-toggle="tooltip" data-bs-title="Detail"><i class="fa-solid fa-circle-info"></i></a>
+                                    <button class="btn btn-secondary text-nowrap bg-gradient edit-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id_menu}" data-bs-toggle="tooltip" data-bs-title="Edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <button class="btn btn-danger text-nowrap bg-gradient rounded-end-3 delete-btn" style="--bs-btn-padding-y: 0.15rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 9pt;" data-id="${row.id_menu}" data-name="${row.nama_petugas}" data-bs-toggle="tooltip" data-bs-title="Hapus"><i class="fa-solid fa-trash"></i></button>
                                 </div>`;
                     }
                 },
@@ -348,6 +348,12 @@
                 "target": [3, 5],
                 "width": "50%"
             }]
+        });
+        // Initialize Bootstrap tooltips
+        $('[data-bs-toggle="tooltip"]').tooltip();
+        // Re-initialize tooltips on table redraw (server-side events like pagination, etc.)
+        table.on('draw', function() {
+            $('[data-bs-toggle="tooltip"]').tooltip();
         });
         $.ajax({
             url: '<?= base_url('menu/petugasoptions') ?>', // Replace with your actual controller/method URL
