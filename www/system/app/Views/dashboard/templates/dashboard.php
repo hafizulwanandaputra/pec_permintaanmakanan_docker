@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $title; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link href="https://padangeyecenter.com/assets/logo/logo_pec.png" rel="icon" />
+    <link href="https://padangeyecenter.com/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
     <link href="<?= base_url(); ?>assets/css/dashboard/dashboard.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets_public/css/main.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets_public/css/JawiDubai.css" rel="stylesheet">
