@@ -7,17 +7,19 @@ services:
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
     ports:
-      - "8088:80"
       - "8089:8089"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
 
   php-apache:
+    image: "pec_permintaanmakanan_docker-php-apache:latest"
     build:
       context: .
     depends_on:
       - "traefik"
       - "mysql"
+    ports:
+      - "8088:80"
     volumes:
       - "./www:/var/www/"
       - "./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini"
