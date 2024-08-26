@@ -313,7 +313,7 @@
                             <a class="dropdown-item p-1 dropdown-item-pec" href="<?= base_url('/settings'); ?>" onclick="showSpinner()">
                                 <div class="d-flex align-items-start">
                                     <span style="width: 32px; text-align: center;"><i class="fa-solid fa-gear"></i></span>
-                                    <span>Settings</span>
+                                    <span>Pengaturan</span>
                                 </div>
                             </a>
                         </li>
@@ -321,7 +321,7 @@
                             <a class="dropdown-item p-1 dropdown-item-pec" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">
                                 <div class="d-flex align-items-start">
                                     <span style="width: 32px; text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></span>
-                                    <span>Logout</span>
+                                    <span>Keluar</span>
                                 </div>
                             </a>
                         </li>
