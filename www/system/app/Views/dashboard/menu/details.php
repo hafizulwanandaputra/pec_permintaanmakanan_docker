@@ -10,43 +10,55 @@
 <div style="min-width: 1px; max-width: 1px;"></div>
 <?= $this->endSection(); ?>
 <?= $this->section('content'); ?>
-<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-3">
+<main class="col-md-9 ms-sm-auto col-lg-10 px-3 px-md-4 pt-3">
     <fieldset class="border rounded-3 px-2 py-0 mb-3">
         <legend class="float-none w-auto mb-0 px-1 fs-6 fw-bold">Informasi Menu</legend>
         <div style="font-size: 9pt;">
             <div class="mb-2 row">
                 <div class="col-lg-3 fw-medium">Tanggal</div>
                 <div class="col-lg">
-                    <div class="date" id="tanggal"></div>
+                    <div class="date placeholder-glow" id="tanggal">
+                        <span class="placeholder" style="width: 100%;"></span>
+                    </div>
                 </div>
             </div>
             <div class="mb-2 row">
                 <div class="col-lg-3 fw-medium">Nama Menu</div>
                 <div class="col-lg">
                     <div>
-                        <div class="mb-1 date fw-bold" id="nama_menu"></div>
+                        <div class="mb-1 date fw-bold placeholder-glow" id="nama_menu">
+                            <span class="placeholder" style="width: 100%;"></span>
+                        </div>
                         <div class="mb-1 row">
                             <div class="col-5 fw-medium">Protein Hewani</div>
                             <div class="col">
-                                <div id="protein_hewani"></div>
+                                <div id="protein_hewani" class="placeholder-glow">
+                                    <span class="placeholder" style="width: 100%;"></span>
+                                </div>
                             </div>
                         </div>
                         <div class="mb-1 row">
                             <div class="col-5 fw-medium">Protein Nabati</div>
                             <div class="col">
-                                <div id="protein_nabati"></div>
+                                <div id="protein_nabati" class="placeholder-glow">
+                                    <span class="placeholder" style="width: 100%;"></span>
+                                </div>
                             </div>
                         </div>
                         <div class="mb-1 row">
                             <div class="col-5 fw-medium">Sayur</div>
                             <div class="col">
-                                <div id="sayur"></div>
+                                <div id="sayur" class="placeholder-glow">
+                                    <span class="placeholder" style="width: 100%;"></span>
+                                </div>
                             </div>
                         </div>
                         <div class="mb-1 row">
                             <div class="col-5 fw-medium">Buah</div>
                             <div class="col">
-                                <div id="buah"></div>
+                                <div id="buah" class="placeholder-glow">
+                                    <span class="placeholder" style="width: 100%;"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -55,19 +67,25 @@
             <div class="mb-2 row">
                 <div class="col-lg-3 fw-medium">Jadwal Makan</div>
                 <div class="col-lg">
-                    <div class="date" id="jadwal_makan"></div>
+                    <div class="date placeholder-glow" id="jadwal_makan">
+                        <span class="placeholder" style="width: 100%;"></span>
+                    </div>
                 </div>
             </div>
             <div class="mb-2 row">
                 <div class="col-lg-3 fw-medium">Petugas Gizi</div>
                 <div class="col-lg">
-                    <div class="date" id="nama_petugas"></div>
+                    <div class="date placeholder-glow" id="nama_petugas">
+                        <span class="placeholder" style="width: 100%;"></span>
+                    </div>
                 </div>
             </div>
             <div class="mb-2 row">
                 <div class="col-lg-3 fw-medium">Jumlah</div>
                 <div class="col-lg">
-                    <div class="date" id="jumlah"></div>
+                    <div class="date placeholder-glow" id="jumlah">
+                        <span class="placeholder" style="width: 100%;"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -290,8 +308,6 @@
         </div>
     </div>
 </main>
-</div>
-</div>
 <?= $this->endSection(); ?>
 <?= $this->section('datatable'); ?>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
@@ -302,33 +318,32 @@
 <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.colVis.min.js"></script>
 <script>
-    function fetchMenuDetails() {
+    async function fetchMenuDetails() {
         $('#loadingSpinner').show();
-        $.ajax({
-            url: `<?= base_url('menu/menu/' . $menu['id_menu']) ?>`,
-            method: 'GET',
-            success: function(data) {
-                $("title").text(`Detail "` + data.nama_menu + `" - <?= $systemName; ?>`);
-                $('#pageTitle').text(`Detail "` + data.nama_menu + `"`);
-                $('#tanggal').text(data.tanggal);
-                $('#nama_menu').text(data.nama_menu);
-                $('#protein_hewani').text(data.protein_hewani);
-                $('#protein_nabati').text(data.protein_nabati);
-                $('#sayur').text(data.sayur);
-                $('#buah').text(data.buah);
-                $('#jadwal_makan').text(data.jadwal_makan);
-                $('#nama_petugas').text(data.nama_petugas);
-                $('#jumlah').text(data.jumlah);
-            },
-            error: function(xhr, status, error) {
-                showFailedToast('Gagal memuat data menu. Silakan coba lagi.');
-            },
-            complete: function() {
-                // Hide the spinner when done
-                $('#loadingSpinner').hide();
-            }
-        });
+
+        try {
+            const response = await axios.get(`<?= base_url('menu/menu/' . $menu['id_menu']) ?>`);
+            const data = response.data;
+
+            $("title").text(`Detail "${data.nama_menu}" - <?= $systemName; ?>`);
+            $('#pageTitle').text(`Detail "${data.nama_menu}"`);
+            $('#tanggal').text(data.tanggal);
+            $('#nama_menu').text(data.nama_menu);
+            $('#protein_hewani').text(data.protein_hewani);
+            $('#protein_nabati').text(data.protein_nabati);
+            $('#sayur').text(data.sayur);
+            $('#buah').text(data.buah);
+            $('#jadwal_makan').text(data.jadwal_makan);
+            $('#nama_petugas').text(data.nama_petugas);
+            $('#jumlah').text(data.jumlah);
+        } catch (error) {
+            showFailedToast('Gagal memuat data menu. Silakan coba lagi.');
+        } finally {
+            // Hide the spinner when done
+            $('#loadingSpinner').hide();
+        }
     }
+
     // Inisialisasi Datatables
     $(document).ready(function() {
         var table = $('#tabel').DataTable({
@@ -524,70 +539,73 @@
             $('#id_menu').val('<?= $menu['id_menu'] ?>');
             $('#demandModal').modal('show');
         });
-        // Show edit user modal
-        $(document).on('click', '.edit-btn', function() {
-            var $this = $(this);
-            var id = $(this).data('id');
+
+        $(document).on('click', '.edit-btn', async function() {
+            const $this = $(this);
+            const id = $(this).data('id');
+            $('[data-bs-toggle="tooltip"]').tooltip('hide');
             $this.prop('disabled', true).html(`<span class="spinner-border" style="width: 11px; height: 11px;" aria-hidden="true"></span>`);
-            $.ajax({
-                url: '<?= base_url('/menu/permintaan') ?>/' + id,
-                success: function(response) {
-                    $('#demandModalLabel').text('Edit Petugas Gizi');
-                    $('#demandId').val(response.id);
-                    $('#nama_pasien').val(response.nama_pasien);
-                    $('#tanggal_lahir').val(response.tanggal_lahir);
-                    var selectedGender = response.jenis_kelamin;
-                    if (selectedGender) {
-                        $("input[name='jenis_kelamin'][value='" + selectedGender + "']").prop('checked', true);
-                    }
-                    $('#kamar').val(response.kamar);
-                    $('#jenis_tindakan').val(response.jenis_tindakan);
-                    $('#diet').val(response.diet);
-                    $('#keterangan').val(response.keterangan);
-                    $('#demandModal').modal('show');
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $this.prop('disabled', false).html(`<i class="fa-solid fa-pen-to-square"></i>`);
+
+            try {
+                const response = await axios.get(`<?= base_url('/menu/permintaan') ?>/${id}`);
+                const data = response.data;
+
+                $('#demandModalLabel').text('Edit Petugas Gizi');
+                $('#demandId').val(data.id);
+                $('#nama_pasien').val(data.nama_pasien);
+                $('#tanggal_lahir').val(data.tanggal_lahir);
+
+                if (data.jenis_kelamin) {
+                    $("input[name='jenis_kelamin'][value='" + data.jenis_kelamin + "']").prop('checked', true);
                 }
-            });
+
+                $('#kamar').val(data.kamar);
+                $('#jenis_tindakan').val(data.jenis_tindakan);
+                $('#diet').val(data.diet);
+                $('#keterangan').val(data.keterangan);
+                $('#demandModal').modal('show');
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $this.prop('disabled', false).html(`<i class="fa-solid fa-pen-to-square"></i>`);
+            }
         });
-        // Show edit user modal
-        $(document).on('click', '.details-btn', function() {
-            var $this = $(this);
-            var id = $(this).data('id');
+
+        $(document).on('click', '.details-btn', async function() {
+            const $this = $(this);
+            const id = $(this).data('id');
+            $('[data-bs-toggle="tooltip"]').tooltip('hide');
             $this.prop('disabled', true).html(`<span class="spinner-border" style="width: 11px; height: 11px;" aria-hidden="true"></span>`);
-            $.ajax({
-                url: '<?= base_url('/menu/permintaan') ?>/' + id,
-                success: function(response) {
-                    $('#tanggal_d').text(response.tanggal);
-                    $('#nama_menu_d').text(response.nama_menu);
-                    $('#protein_hewani_d').text(response.protein_hewani);
-                    $('#protein_nabati_d').text(response.protein_nabati);
-                    $('#sayur_d').text(response.sayur);
-                    $('#buah_d').text(response.buah);
-                    $('#jadwal_makan_d').text(response.jadwal_makan);
-                    $('#nama_petugas_d').text(response.nama_petugas);
-                    $('#nama_pasien_d').text(response.nama_pasien);
-                    $('#tanggal_lahir_d').text(response.tanggal_lahir);
-                    $('#jenis_kelamin_d').text(response.jenis_kelamin);
-                    $('#kamar_d').text(response.kamar);
-                    $('#jenis_tindakan_d').text(response.jenis_tindakan);
-                    $('#diet_d').text(response.diet);
-                    $('#keterangan_d').text(response.keterangan);
-                    $('#printeticket').attr('onclick', `window.open("<?= base_url('/permintaan/eticketprint') ?>/${id}", "Window","status=1,toolbar=1,width=500,height=400,resizable=yes")`);
-                    $('#demandDetails').modal('show');
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $this.prop('disabled', false).html(`<i class="fa-solid fa-circle-info"></i>`);
-                }
-            });
+
+            try {
+                const response = await axios.get(`<?= base_url('/menu/permintaan') ?>/${id}`);
+                const data = response.data;
+
+                $('#tanggal_d').text(data.tanggal);
+                $('#nama_menu_d').text(data.nama_menu);
+                $('#protein_hewani_d').text(data.protein_hewani);
+                $('#protein_nabati_d').text(data.protein_nabati);
+                $('#sayur_d').text(data.sayur);
+                $('#buah_d').text(data.buah);
+                $('#jadwal_makan_d').text(data.jadwal_makan);
+                $('#nama_petugas_d').text(data.nama_petugas);
+                $('#nama_pasien_d').text(data.nama_pasien);
+                $('#tanggal_lahir_d').text(data.tanggal_lahir);
+                $('#jenis_kelamin_d').text(data.jenis_kelamin);
+                $('#kamar_d').text(data.kamar);
+                $('#jenis_tindakan_d').text(data.jenis_tindakan);
+                $('#diet_d').text(data.diet);
+                $('#keterangan_d').text(data.keterangan);
+
+                $('#printeticket').attr('onclick', `window.open("<?= base_url('/permintaan/eticketprint') ?>/${id}", "Window","status=1,toolbar=1,width=500,height=400,resizable=yes")`);
+                $('#demandDetails').modal('show');
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $this.prop('disabled', false).html(`<i class="fa-solid fa-circle-info"></i>`);
+            }
         });
+
         // Store the ID of the user to be deleted
         var permintaanId;
         var permintaanName;
@@ -596,120 +614,117 @@
         $(document).on('click', '.delete-btn', function() {
             permintaanId = $(this).data('id');
             permintaanName = $(this).data('name');
+            $('[data-bs-toggle="tooltip"]').tooltip('hide');
             $('#deleteMessage').html(`Hapus "` + permintaanName + `"?`);
             $('#deleteModal').modal('show');
         });
 
-        // Confirm deletion
-        $('#confirmDeleteBtn').click(function() {
+        $('#confirmDeleteBtn').click(async function() {
             $('#deleteModal button').prop('disabled', true);
             $('#deleteMessage').html(`Mengapus, silakan tunggu...`);
-            $.ajax({
-                url: '<?= base_url('/permintaan/delete') ?>/' + permintaanId,
-                type: 'DELETE',
-                success: function(response) {
-                    showSuccessToast(response.message);
-                    table.ajax.reload();
-                    fetchMenuDetails();
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $('#deleteModal').modal('hide');
-                    $('#deleteModal button').prop('disabled', false);
-                }
-            });
+
+            try {
+                await axios.delete(`<?= base_url('/permintaan/delete') ?>/${permintaanId}`);
+                showSuccessToast('Data berhasil dihapus.');
+                table.ajax.reload();
+                fetchMenuDetails();
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $('#deleteModal').modal('hide');
+                $('#deleteModal button').prop('disabled', false);
+            }
         });
-        // Submit user form (Add/Edit)
-        $('#demandForm').submit(function(e) {
+
+        $('#demandForm').submit(async function(e) {
             e.preventDefault();
-            var url = $('#demandId').val() ? '<?= base_url('/menu/updatepermintaan') ?>' : '<?= base_url('/menu/createpermintaan') ?>';
-            var formData = new FormData(this);
+            const url = $('#demandId').val() ? '<?= base_url('/menu/updatepermintaan') ?>' : '<?= base_url('/menu/createpermintaan') ?>';
+            const formData = new FormData(this);
+
             console.log("Form URL:", url);
             console.log("Form Data:", $(this).serialize());
+
             // Clear previous validation states
             $('#demandForm .is-invalid').removeClass('is-invalid');
             $('#demandForm .invalid-feedback').text('').hide();
+
             $('#submitButton').prop('disabled', true).html(`
                 <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                 <span role="status">Memproses, silakan tunggu...</span>
             `);
             // Disable form inputs
             $('#demandForm input, #demandForm select, #demandForm textarea, #closeBtn').prop('disabled', true);
-            $.ajax({
-                url: url,
-                type: 'POST',
-                data: formData,
-                contentType: false, // Required for FormData
-                processData: false, // Required for FormData
-                success: function(response) {
-                    if (response.success) {
-                        showSuccessToast(response.message, 'success');
-                        $('#demandModal').modal('hide');
-                        table.ajax.reload();
-                        fetchMenuDetails();
-                    } else {
-                        console.log("Validation Errors:", response.errors);
 
-                        // Clear previous validation states
-                        $('#userForm .is-invalid').removeClass('is-invalid');
-                        $('#userForm .invalid-feedback').text('').hide();
+            try {
+                const response = await axios.post(url, formData, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data' // Required for FormData
+                    }
+                });
 
-                        // Display new validation errors
-                        for (var field in response.errors) {
-                            if (response.errors.hasOwnProperty(field)) {
-                                var fieldElement = $('#' + field);
+                if (response.data.success) {
+                    showSuccessToast(response.data.message, 'success');
+                    $('#demandModal').modal('hide');
+                    table.ajax.reload();
+                    fetchMenuDetails();
+                } else {
+                    console.log("Validation Errors:", response.data.errors);
 
-                                // Handle radio button group separately
-                                if (field === 'jenis_kelamin') {
-                                    fieldElement = $("input[name='jenis_kelamin']"); // Select the radio button group
-                                    var radioGroup = fieldElement.closest('.col-form-label');
-                                    const feedbackElement = radioGroup.find('.invalid-feedback');
+                    // Clear previous validation states
+                    $('#demandForm .is-invalid').removeClass('is-invalid');
+                    $('#demandForm .invalid-feedback').text('').hide();
 
-                                    if (fieldElement.length > 0 && feedbackElement.length > 0) {
-                                        fieldElement.addClass('is-invalid');
-                                        feedbackElement.text(response.errors[field]).show();
+                    // Display new validation errors
+                    for (const field in response.data.errors) {
+                        if (response.data.errors.hasOwnProperty(field)) {
+                            let fieldElement = $('#' + field);
 
-                                        // Remove error message when the user selects any radio button in the group
-                                        fieldElement.on('change', function() {
-                                            $("input[name='jenis_kelamin']").removeClass('is-invalid'); // Remove invalid class from all radio buttons
-                                            feedbackElement.removeAttr('style').hide(); // Hide the feedback element
-                                            console.log(feedbackElement); // Check the state of the feedback element
-                                        });
-                                    }
+                            // Handle radio button group separately
+                            if (field === 'jenis_kelamin') {
+                                fieldElement = $("input[name='jenis_kelamin']"); // Select the radio button group
+                                const radioGroup = fieldElement.closest('.col-form-label');
+                                const feedbackElement = radioGroup.find('.invalid-feedback');
+
+                                if (fieldElement.length > 0 && feedbackElement.length > 0) {
+                                    fieldElement.addClass('is-invalid');
+                                    feedbackElement.text(response.data.errors[field]).show();
+
+                                    // Remove error message when the user selects any radio button in the group
+                                    fieldElement.on('change', function() {
+                                        $("input[name='jenis_kelamin']").removeClass('is-invalid'); // Remove invalid class from all radio buttons
+                                        feedbackElement.removeAttr('style').hide(); // Hide the feedback element
+                                    });
+                                }
+                            } else {
+                                const feedbackElement = fieldElement.siblings('.invalid-feedback');
+
+                                if (fieldElement.length > 0 && feedbackElement.length > 0) {
+                                    fieldElement.addClass('is-invalid');
+                                    feedbackElement.text(response.data.errors[field]).show();
+
+                                    // Remove error message when the user corrects the input
+                                    fieldElement.on('input change', function() {
+                                        $(this).removeClass('is-invalid');
+                                        $(this).siblings('.invalid-feedback').text('').hide();
+                                    });
                                 } else {
-                                    var feedbackElement = fieldElement.siblings('.invalid-feedback');
-
-                                    if (fieldElement.length > 0 && feedbackElement.length > 0) {
-                                        fieldElement.addClass('is-invalid');
-                                        feedbackElement.text(response.errors[field]).show();
-
-                                        // Remove error message when the user corrects the input
-                                        fieldElement.on('input change', function() {
-                                            $(this).removeClass('is-invalid');
-                                            $(this).siblings('.invalid-feedback').text('').hide();
-                                        });
-                                    } else {
-                                        console.warn("Element not found for field:", field);
-                                    }
+                                    console.warn("Element not found for field:", field);
                                 }
                             }
                         }
-                        showFailedToast('Perbaiki kesalahan pada formulir.');
                     }
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $('#submitButton').prop('disabled', false).html(`
-                        <i class="fa-solid fa-floppy-disk"></i> Simpan
-                    `);
-                    $('#demandForm input, #demandForm select, #demandForm textarea, #closeBtn').prop('disabled', false)
+                    showFailedToast('Perbaiki kesalahan pada formulir.');
                 }
-            });
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $('#submitButton').prop('disabled', false).html(`
+                    <i class="fa-solid fa-floppy-disk"></i> Simpan
+                `);
+                $('#demandForm input, #demandForm select, #demandForm textarea, #closeBtn').prop('disabled', false);
+            }
         });
+
         $('#demandModal').on('hidden.bs.modal', function() {
             $('#demandForm')[0].reset();
             $('.is-invalid').removeClass('is-invalid');

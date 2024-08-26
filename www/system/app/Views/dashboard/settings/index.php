@@ -2,11 +2,14 @@
 <?= $this->section('title'); ?>
 <div class="d-flex justify-content-start align-items-center">
     <span class="fw-medium fs-5 flex-fill text-truncate"><?= $headertitle; ?></span>
+    <div id="loadingSpinner" class="spinner-border spinner-border-sm" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
 </div>
 <div style="min-width: 1px; max-width: 1px;"></div>
 <?= $this->endSection(); ?>
 <?= $this->section('content'); ?>
-<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-3">
+<main class="col-md-9 ms-sm-auto col-lg-10 px-3 px-md-4 pt-3">
     <h5>Pengguna</h5>
     <ul class="list-group shadow-sm rounded-3 mb-3">
         <li class="list-group-item p-1 list-group-item-action">
@@ -53,6 +56,11 @@
         </li>
     </ul>
 </main>
-</div>
-</div>
+<?= $this->endSection(); ?>
+<?= $this->section('javascript'); ?>
+<script>
+    $(document).ready(function() {
+        $('#loadingSpinner').hide();
+    });
+</script>
 <?= $this->endSection(); ?>

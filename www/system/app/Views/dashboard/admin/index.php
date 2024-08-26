@@ -9,7 +9,7 @@
 <div style="min-width: 1px; max-width: 1px;"></div>
 <?= $this->endSection(); ?>
 <?= $this->section('content'); ?>
-<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-3">
+<main class="col-md-9 ms-sm-auto col-lg-10 px-3 px-md-4 pt-3">
     <div class="mb-2">
         <table id="tabel" class="table table-sm table-hover" style="width:100%; font-size: 9pt;">
             <thead>
@@ -91,8 +91,6 @@
         </div>
     </div>
 </main>
-</div>
-</div>
 <?= $this->endSection(); ?>
 <?= $this->section('toast'); ?>
 
@@ -318,30 +316,35 @@
             $('#userModal').modal('show');
         });
         // Show edit user modal
-        $(document).on('click', '.edit-btn', function() {
-            var $this = $(this);
-            var id = $(this).data('id');
+        $(document).on('click', '.edit-btn', async function() {
+            const $this = $(this);
+            const id = $(this).data('id');
+            $('[data-bs-toggle="tooltip"]').tooltip('hide');
             $this.prop('disabled', true).html(`<span class="spinner-border" style="width: 11px; height: 11px;" aria-hidden="true"></span>`);
-            $.ajax({
-                url: '<?= base_url('/admin/admin') ?>/' + id,
-                success: function(response) {
-                    $('#userModalLabel').text('Edit Admin');
-                    $('#userId').val(response.id_user);
-                    $('#fullname').val(response.fullname);
-                    $('#username').val(response.username);
-                    $('#role').val(response.role);
-                    // Set the original_username hidden field
-                    $('#original_username').val(response.username);
-                    $('#userModal').modal('show');
-                },
-                error: function(xhr, status, error) {
-                    showToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $this.prop('disabled', false).html(`<i class="fa-solid fa-pen-to-square"></i>`);
-                }
-            });
+
+            try {
+                // Make the request with Axios
+                const response = await axios.get(`<?= base_url('/admin/admin') ?>/${id}`);
+
+                // Update the modal fields
+                $('#userModalLabel').text('Edit Admin');
+                $('#userId').val(response.data.id_user);
+                $('#fullname').val(response.data.fullname);
+                $('#username').val(response.data.username);
+                $('#role').val(response.data.role);
+                // Set the original_username hidden field
+                $('#original_username').val(response.data.username);
+
+                // Show the modal
+                $('#userModal').modal('show');
+            } catch (error) {
+                showToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                // Reset the button state
+                $this.prop('disabled', false).html(`<i class="fa-solid fa-pen-to-square"></i>`);
+            }
         });
+
         // Store the ID of the user to be deleted
         var userId;
         var userName;
@@ -350,6 +353,7 @@
         $(document).on('click', '.delete-btn', function() {
             userId = $(this).data('id');
             userName = $(this).data('username');
+            $('[data-bs-toggle="tooltip"]').tooltip('hide');
             $('#deleteMessage').html(`Hapus @` + userName + `?`);
             $('#deleteModal').modal('show');
         });
@@ -357,61 +361,58 @@
         $(document).on('click', '.resetpwd-btn', function() {
             userId = $(this).data('id');
             userName = $(this).data('username');
+            $('[data-bs-toggle="tooltip"]').tooltip('hide');
             $('#resetPasswordMessage').html(`Atur ulang kata sandi @` + userName + `?`);
             $('#resetPasswordSubmessage').html(`Kata sandi pengguna ini akan diatur sama dengan nama pengguna`);
             $('#resetPasswordModal').modal('show');
         });
 
         // Confirm deletion
-        $('#confirmDeleteBtn').click(function() {
+        $('#confirmDeleteBtn').click(async function() {
             $('#deleteModal button').prop('disabled', true);
-            $('#deleteMessage').html(`Mengapus, silakan tunggu...`);
-            $.ajax({
-                url: '<?= base_url('/admin/delete') ?>/' + userId,
-                type: 'DELETE',
-                success: function(response) {
-                    showSuccessToast(response.message);
-                    table.ajax.reload();
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $('#deleteModal').modal('hide');
-                    $('#deleteModal button').prop('disabled', false);
-                }
-            });
+            $('#deleteMessage').html('Mengapus, silakan tunggu...');
+
+            try {
+                await axios.delete(`<?= base_url('/admin/delete') ?>/${userId}`);
+                showSuccessToast('User berhasil dihapus.');
+                table.ajax.reload();
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $('#deleteModal').modal('hide');
+                $('#deleteModal button').prop('disabled', false);
+            }
         });
+
         // Confirm reset password
-        $('#confirmResetPasswordBtn').click(function() {
+        $('#confirmResetPasswordBtn').click(async function() {
             $('#resetPasswordModal button').prop('disabled', true);
-            $('#resetPasswordMessage').addClass('mb-0').html(`Mengatur ulang kata sandi, silakan tunggu...`);
+            $('#resetPasswordMessage').addClass('mb-0').html('Mengatur ulang kata sandi, silakan tunggu...');
             $('#resetPasswordSubmessage').hide();
-            $.ajax({
-                url: '<?= base_url('/admin/resetpassword') ?>/' + userId,
-                type: 'POST',
-                success: function(response) {
-                    showSuccessToast(response.message);
-                    table.ajax.reload();
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $('#resetPasswordModal').modal('hide');
-                    $('#resetPasswordMessage').removeClass('mb-0');
-                    $('#resetPasswordSubmessage').show();
-                    $('#resetPasswordModal button').prop('disabled', false);
-                }
-            });
+
+            try {
+                await axios.post(`<?= base_url('/admin/resetpassword') ?>/${userId}`);
+                showSuccessToast('Kata sandi berhasil direset.');
+                table.ajax.reload();
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $('#resetPasswordModal').modal('hide');
+                $('#resetPasswordMessage').removeClass('mb-0');
+                $('#resetPasswordSubmessage').show();
+                $('#resetPasswordModal button').prop('disabled', false);
+            }
         });
+
         // Submit user form (Add/Edit)
-        $('#userForm').submit(function(e) {
+        $('#userForm').submit(async function(e) {
             e.preventDefault();
-            var url = $('#userId').val() ? '<?= base_url('/admin/update') ?>' : '<?= base_url('/admin/create') ?>';
-            var formData = new FormData(this);
+
+            const url = $('#userId').val() ? '<?= base_url('/admin/update') ?>' : '<?= base_url('/admin/create') ?>';
+            const formData = new FormData(this);
             console.log("Form URL:", url);
             console.log("Form Data:", $(this).serialize());
+
             // Clear previous validation states
             $('#userForm .is-invalid').removeClass('is-invalid');
             $('#userForm .invalid-feedback').text('').hide();
@@ -419,63 +420,63 @@
                 <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                 <span role="status">Memproses, silakan tunggu...</span>
             `);
+
             // Disable form inputs
             $('#userForm input, #userForm select, #closeBtn').prop('disabled', true);
-            $.ajax({
-                url: url,
-                type: 'POST',
-                data: formData,
-                contentType: false, // Required for FormData
-                processData: false, // Required for FormData
-                success: function(response) {
-                    if (response.success) {
-                        showSuccessToast(response.message, 'success');
-                        $('#userModal').modal('hide');
-                        table.ajax.reload();
-                    } else {
-                        console.log("Validation Errors:", response.errors);
 
-                        // Clear previous validation states
-                        $('#userForm .is-invalid').removeClass('is-invalid');
-                        $('#userForm .invalid-feedback').text('').hide();
+            try {
+                const response = await axios.post(url, formData, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                });
 
-                        // Display new validation errors
-                        for (var field in response.errors) {
-                            if (response.errors.hasOwnProperty(field)) {
-                                var fieldElement = $('#' + field);
-                                var feedbackElement = fieldElement.siblings('.invalid-feedback'); // Adjust this if necessary
+                if (response.data.success) {
+                    showSuccessToast(response.data.message, 'success');
+                    $('#userModal').modal('hide');
+                    table.ajax.reload();
+                } else {
+                    console.log("Validation Errors:", response.data.errors);
 
-                                console.log("Target Field:", fieldElement);
-                                console.log("Target Feedback:", feedbackElement);
+                    // Clear previous validation states
+                    $('#userForm .is-invalid').removeClass('is-invalid');
+                    $('#userForm .invalid-feedback').text('').hide();
 
-                                if (fieldElement.length > 0 && feedbackElement.length > 0) {
-                                    fieldElement.addClass('is-invalid');
-                                    feedbackElement.text(response.errors[field]).show();
+                    // Display new validation errors
+                    for (const field in response.data.errors) {
+                        if (response.data.errors.hasOwnProperty(field)) {
+                            const fieldElement = $('#' + field);
+                            const feedbackElement = fieldElement.siblings('.invalid-feedback'); // Adjust this if necessary
 
-                                    // Remove error message when the user corrects the input
-                                    fieldElement.on('input change', function() {
-                                        $(this).removeClass('is-invalid');
-                                        $(this).siblings('.invalid-feedback').text('').hide();
-                                    });
-                                } else {
-                                    console.warn("Elemen tidak ditemukan pada field:", field);
-                                }
+                            console.log("Target Field:", fieldElement);
+                            console.log("Target Feedback:", feedbackElement);
+
+                            if (fieldElement.length > 0 && feedbackElement.length > 0) {
+                                fieldElement.addClass('is-invalid');
+                                feedbackElement.text(response.data.errors[field]).show();
+
+                                // Remove error message when the user corrects the input
+                                fieldElement.on('input change', function() {
+                                    $(this).removeClass('is-invalid');
+                                    $(this).siblings('.invalid-feedback').text('').hide();
+                                });
+                            } else {
+                                console.warn("Elemen tidak ditemukan pada field:", field);
                             }
                         }
-                        showFailedToast('Perbaiki kesalahan pada formulir.');
                     }
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $('#submitButton').prop('disabled', false).html(`
-                        <i class="fa-solid fa-floppy-disk"></i> Simpan
-                    `);
-                    $('#userForm input, #userForm select, #closeBtn').prop('disabled', false)
+                    showFailedToast('Perbaiki kesalahan pada formulir.');
                 }
-            });
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $('#submitButton').prop('disabled', false).html(`
+                    <i class="fa-solid fa-floppy-disk"></i> Simpan
+                `);
+                $('#userForm input, #userForm select, #closeBtn').prop('disabled', false);
+            }
         });
+
         $('#userModal').on('hidden.bs.modal', function() {
             $('#userForm')[0].reset();
             $('.is-invalid').removeClass('is-invalid');

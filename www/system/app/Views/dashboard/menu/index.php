@@ -9,7 +9,7 @@
 <div style="min-width: 1px; max-width: 1px;"></div>
 <?= $this->endSection(); ?>
 <?= $this->section('content'); ?>
-<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-3">
+<main class="col-md-9 ms-sm-auto col-lg-10 px-3 px-md-4 pt-3">
     <div class="mb-2">
         <table id="tabel" class="table table-sm table-hover" style="width:100%; font-size: 9pt;">
             <thead>
@@ -116,8 +116,6 @@
         </div>
     </div>
 </main>
-</div>
-</div>
 <?= $this->endSection(); ?>
 <?= $this->section('datatable'); ?>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
@@ -352,28 +350,28 @@
         table.on('draw', function() {
             $('[data-bs-toggle="tooltip"]').tooltip();
         });
-        $.ajax({
-            url: '<?= base_url('menu/petugasoptions') ?>', // Replace with your actual controller/method URL
-            type: 'GET',
-            dataType: 'json',
-            success: function(response) {
-                if (response.success) {
-                    var options = response.data;
-                    var select = $('#id_petugas');
+        async function loadPetugasOptions() {
+            try {
+                const response = await axios.get('<?= base_url('menu/petugasoptions') ?>');
+
+                if (response.data.success) {
+                    const options = response.data.data;
+                    const select = $('#id_petugas');
 
                     // Clear existing options except the first one
                     select.find('option:not(:first)').remove();
 
                     // Loop through the options and append them to the select element
-                    $.each(options, function(index, option) {
-                        select.append('<option value="' + option.value + '">' + option.text + '</option>');
+                    options.forEach(option => {
+                        select.append(`<option value="${option.value}">${option.text}</option>`);
                     });
                 }
-            },
-            error: function() {
-                console.error('Gagal mendapatkan petugas.');
+            } catch (error) {
+                showFailedToast('Gagal mendapatkan petugas<br>' + error);
             }
-        });
+        }
+        // Call the function to load the options
+        loadPetugasOptions();
         // Show add user modal
         $('#addMenuBtn').click(function() {
             $('#menuModalLabel').text('Tambah Menu Makanan');
@@ -383,36 +381,37 @@
             $('#id_petugas_lama').val('');
             $('#menuModal').modal('show');
         });
-        // Show edit user modal
-        $(document).on('click', '.edit-btn', function() {
-            var $this = $(this);
-            var id = $(this).data('id');
+        $(document).on('click', '.edit-btn', async function() {
+            const $this = $(this);
+            const id = $(this).data('id');
+            $('[data-bs-toggle="tooltip"]').tooltip('hide');
             $this.prop('disabled', true).html(`<span class="spinner-border" style="width: 11px; height: 11px;" aria-hidden="true"></span>`);
-            $.ajax({
-                url: '<?= base_url('/menu/menu') ?>/' + id,
-                success: function(response) {
+
+            try {
+                const response = await axios.get(`<?= base_url('/menu/menu') ?>/${id}`);
+
+                if (response.data) {
                     $('#menuModalLabel').text('Edit Petugas Gizi');
-                    $('#menuId').val(response.id_menu);
-                    $('#tanggal').val(response.tanggal);
-                    $('#nama_menu').val(response.nama_menu);
-                    $('#jadwal_makan').val(response.jadwal_makan);
-                    $('#id_petugas').val(response.id_petugas);
-                    $('#id_petugas_lama').val(response.id_petugas);
-                    $('#protein_hewani').val(response.protein_hewani);
-                    $('#protein_nabati').val(response.protein_nabati);
-                    $('#sayur').val(response.sayur);
-                    $('#buah').val(response.buah);
-                    $('#jumlah').val(response.jumlah);
+                    $('#menuId').val(response.data.id_menu);
+                    $('#tanggal').val(response.data.tanggal);
+                    $('#nama_menu').val(response.data.nama_menu);
+                    $('#jadwal_makan').val(response.data.jadwal_makan);
+                    $('#id_petugas').val(response.data.id_petugas);
+                    $('#id_petugas_lama').val(response.data.id_petugas);
+                    $('#protein_hewani').val(response.data.protein_hewani);
+                    $('#protein_nabati').val(response.data.protein_nabati);
+                    $('#sayur').val(response.data.sayur);
+                    $('#buah').val(response.data.buah);
+                    $('#jumlah').val(response.data.jumlah);
                     $('#menuModal').modal('show');
-                },
-                error: function(xhr, status, error) {
-                    showToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $this.prop('disabled', false).html(`<i class="fa-solid fa-pen-to-square"></i>`);
                 }
-            });
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $this.prop('disabled', false).html(`<i class="fa-solid fa-pen-to-square"></i>`);
+            }
         });
+
         // Store the ID of the user to be deleted
         var menuId;
         var menuName;
@@ -421,105 +420,98 @@
         $(document).on('click', '.delete-btn', function() {
             menuId = $(this).data('id');
             menuName = $(this).data('name');
+            $('[data-bs-toggle="tooltip"]').tooltip('hide');
             $('#deleteMessage').html(`Hapus "` + menuName + `"?`);
             $('#deleteSubmessage').html(`Mengapus menu juga akan menghapus permintaan yang menggunakan menu ini`);
             $('#deleteModal').modal('show');
         });
 
-        // Confirm deletion
-        $('#confirmDeleteBtn').click(function() {
+        $('#confirmDeleteBtn').click(async function() {
             $('#deleteModal button').prop('disabled', true);
-            $('#deleteMessage').addClass('mb-0').html(`Mengapus, silakan tunggu...`);
+            $('#deleteMessage').addClass('mb-0').html('Mengapus, silakan tunggu...');
             $('#deleteSubmessage').hide();
-            $.ajax({
-                url: '<?= base_url('/menu/delete') ?>/' + menuId,
-                type: 'DELETE',
-                success: function(response) {
-                    showSuccessToast(response.message);
-                    table.ajax.reload();
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $('#deleteModal').modal('hide');
-                    $('#deleteMessage').removeClass('mb-0');
-                    $('#deleteSubmessage').show();
-                    $('#deleteModal button').prop('disabled', false);
-                }
-            });
+
+            try {
+                await axios.delete(`<?= base_url('/menu/delete') ?>/${menuId}`);
+                showSuccessToast('Data berhasil dihapus.');
+                table.ajax.reload();
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $('#deleteModal').modal('hide');
+                $('#deleteMessage').removeClass('mb-0');
+                $('#deleteSubmessage').show();
+                $('#deleteModal button').prop('disabled', false);
+            }
         });
-        // Submit user form (Add/Edit)
-        $('#menuForm').submit(function(e) {
+
+        $('#menuForm').submit(async function(e) {
             e.preventDefault();
-            var url = $('#menuId').val() ? '<?= base_url('/menu/update') ?>' : '<?= base_url('/menu/create') ?>';
-            var formData = new FormData(this);
-            console.log("Form URL:", url);
-            console.log("Form Data:", $(this).serialize());
+            const url = $('#menuId').val() ? '<?= base_url('/menu/update') ?>' : '<?= base_url('/menu/create') ?>';
+            const formData = new FormData(this);
+
             // Clear previous validation states
             $('#menuForm .is-invalid').removeClass('is-invalid');
             $('#menuForm .invalid-feedback').text('').hide();
+
             $('#submitButton').prop('disabled', true).html(`
                 <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                 <span role="status">Memproses, silakan tunggu...</span>
             `);
+
             // Disable form inputs
             $('#menuForm input, #menuForm select, #closeBtn').prop('disabled', true);
-            $.ajax({
-                url: url,
-                type: 'POST',
-                data: formData,
-                contentType: false, // Required for FormData
-                processData: false, // Required for FormData
-                success: function(response) {
-                    if (response.success) {
-                        showSuccessToast(response.message, 'success');
-                        $('#menuModal').modal('hide');
-                        table.ajax.reload();
-                    } else {
-                        console.log("Validation Errors:", response.errors);
 
-                        // Clear previous validation states
-                        $('#userForm .is-invalid').removeClass('is-invalid');
-                        $('#userForm .invalid-feedback').text('').hide();
+            try {
+                const response = await axios.post(url, formData, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data' // Required for FormData
+                    }
+                });
 
-                        // Display new validation errors
-                        for (var field in response.errors) {
-                            if (response.errors.hasOwnProperty(field)) {
-                                var fieldElement = $('#' + field);
-                                var feedbackElement = fieldElement.siblings('.invalid-feedback'); // Adjust this if necessary
+                if (response.data.success) {
+                    showSuccessToast(response.data.message, 'success');
+                    $('#menuModal').modal('hide');
+                    table.ajax.reload();
+                } else {
+                    console.log("Validation Errors:", response.data.errors);
 
-                                console.log("Target Field:", fieldElement);
-                                console.log("Target Feedback:", feedbackElement);
+                    // Clear previous validation states
+                    $('#menuForm .is-invalid').removeClass('is-invalid');
+                    $('#menuForm .invalid-feedback').text('').hide();
 
-                                if (fieldElement.length > 0 && feedbackElement.length > 0) {
-                                    fieldElement.addClass('is-invalid');
-                                    feedbackElement.text(response.errors[field]).show();
+                    // Display new validation errors
+                    for (const field in response.data.errors) {
+                        if (response.data.errors.hasOwnProperty(field)) {
+                            const fieldElement = $('#' + field);
+                            const feedbackElement = fieldElement.siblings('.invalid-feedback');
 
-                                    // Remove error message when the user corrects the input
-                                    fieldElement.on('input change', function() {
-                                        $(this).removeClass('is-invalid');
-                                        $(this).siblings('.invalid-feedback').text('').hide();
-                                    });
-                                } else {
-                                    console.warn("Elemen tidak ditemukan pada field:", field);
-                                }
+                            if (fieldElement.length > 0 && feedbackElement.length > 0) {
+                                fieldElement.addClass('is-invalid');
+                                feedbackElement.text(response.data.errors[field]).show();
+
+                                // Remove error message when the user corrects the input
+                                fieldElement.on('input change', function() {
+                                    $(this).removeClass('is-invalid');
+                                    $(this).siblings('.invalid-feedback').text('').hide();
+                                });
+                            } else {
+                                console.warn("Elemen tidak ditemukan pada field:", field);
                             }
                         }
-                        showFailedToast('Perbaiki kesalahan pada formulir.');
                     }
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $('#submitButton').prop('disabled', false).html(`
-                        <i class="fa-solid fa-floppy-disk"></i> Simpan
-                    `);
-                    $('#menuForm input, #menuForm select, #closeBtn').prop('disabled', false)
+                    showFailedToast('Perbaiki kesalahan pada formulir.');
                 }
-            });
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $('#submitButton').prop('disabled', false).html(`
+                    <i class="fa-solid fa-floppy-disk"></i> Simpan
+                `);
+                $('#menuForm input, #menuForm select, #closeBtn').prop('disabled', false);
+            }
         });
+
         $('#menuModal').on('hidden.bs.modal', function() {
             $('#menuForm')[0].reset();
             $('.is-invalid').removeClass('is-invalid');

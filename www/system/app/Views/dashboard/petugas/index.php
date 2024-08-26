@@ -9,7 +9,7 @@
 <div style="min-width: 1px; max-width: 1px;"></div>
 <?= $this->endSection(); ?>
 <?= $this->section('content'); ?>
-<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-3">
+<main class="col-md-9 ms-sm-auto col-lg-10 px-3 px-md-4 pt-3">
     <div class="mb-2">
         <table id="tabel" class="table table-sm table-hover" style="width:100%; font-size: 9pt;">
             <thead>
@@ -64,8 +64,6 @@
         </div>
     </div>
 </main>
-</div>
-</div>
 <?= $this->endSection(); ?>
 <?= $this->section('datatable'); ?>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
@@ -284,29 +282,28 @@
             $('#jumlah_menu').val('');
             $('#officerModal').modal('show');
         });
-        // Show edit user modal
-        $(document).on('click', '.edit-btn', function() {
-            var $this = $(this);
-            var id = $(this).data('id');
+
+        $(document).on('click', '.edit-btn', async function() {
+            const $this = $(this);
+            const id = $(this).data('id');
+            $('[data-bs-toggle="tooltip"]').tooltip('hide');
             $this.prop('disabled', true).html(`<span class="spinner-border" style="width: 11px; height: 11px;" aria-hidden="true"></span>`);
-            $.ajax({
-                url: '<?= base_url('/petugas/petugas') ?>/' + id,
-                success: function(response) {
-                    $('#officerModalLabel').text('Edit Petugas Gizi');
-                    $('#officerId').val(response.id_petugas);
-                    $('#nama_petugas_lama').val(response.nama_petugas);
-                    $('#nama_petugas').val(response.nama_petugas);
-                    $('#jumlah_menu').val(response.jumlah_menu);
-                    $('#officerModal').modal('show');
-                },
-                error: function(xhr, status, error) {
-                    showToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $this.prop('disabled', false).html(`<i class="fa-solid fa-pen-to-square"></i>`);
-                }
-            });
+
+            try {
+                const response = await axios.get(`<?= base_url('/petugas/petugas') ?>/${id}`);
+                $('#officerModalLabel').text('Edit Petugas Gizi');
+                $('#officerId').val(response.data.id_petugas);
+                $('#nama_petugas_lama').val(response.data.nama_petugas);
+                $('#nama_petugas').val(response.data.nama_petugas);
+                $('#jumlah_menu').val(response.data.jumlah_menu);
+                $('#officerModal').modal('show');
+            } catch (error) {
+                showToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $this.prop('disabled', false).html(`<i class="fa-solid fa-pen-to-square"></i>`);
+            }
         });
+
         // Store the ID of the user to be deleted
         var officerId;
         var officerName;
@@ -315,41 +312,39 @@
         $(document).on('click', '.delete-btn', function() {
             officerId = $(this).data('id');
             officerName = $(this).data('name');
+            $('[data-bs-toggle="tooltip"]').tooltip('hide');
             $('#deleteMessage').html(`Hapus "` + officerName + `"?`);
             $('#deleteSubmessage').html(`Mengapus petugas gizi juga akan menghapus menu dan permintaan yang menggunakan petugas ini`);
             $('#deleteModal').modal('show');
         });
 
-        // Confirm deletion
-        $('#confirmDeleteBtn').click(function() {
+        $('#confirmDeleteBtn').click(async function() {
             $('#deleteModal button').prop('disabled', true);
-            $('#deleteMessage').addClass('mb-0').html(`Mengapus, silakan tunggu...`);
+            $('#deleteMessage').addClass('mb-0').html('Mengapus, silakan tunggu...');
             $('#deleteSubmessage').hide();
-            $.ajax({
-                url: '<?= base_url('/petugas/delete') ?>/' + officerId,
-                type: 'DELETE',
-                success: function(response) {
-                    showSuccessToast(response.message);
-                    table.ajax.reload();
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $('#deleteModal').modal('hide');
-                    $('#deleteMessage').removeClass('mb-0');
-                    $('#deleteSubmessage').show();
-                    $('#deleteModal button').prop('disabled', false);
-                }
-            });
+
+            try {
+                await axios.delete(`<?= base_url('/petugas/delete') ?>/${officerId}`);
+                showSuccessToast('Petugas berhasil dihapus.');
+                table.ajax.reload();
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $('#deleteModal').modal('hide');
+                $('#deleteMessage').removeClass('mb-0');
+                $('#deleteSubmessage').show();
+                $('#deleteModal button').prop('disabled', false);
+            }
         });
-        // Submit user form (Add/Edit)
-        $('#officerForm').submit(function(e) {
+
+        $('#officerForm').submit(async function(e) {
             e.preventDefault();
-            var url = $('#officerId').val() ? '<?= base_url('/petugas/update') ?>' : '<?= base_url('/petugas/create') ?>';
-            var formData = new FormData(this);
+
+            const url = $('#officerId').val() ? '<?= base_url('/petugas/update') ?>' : '<?= base_url('/petugas/create') ?>';
+            const formData = new FormData(this);
             console.log("Form URL:", url);
             console.log("Form Data:", $(this).serialize());
+
             // Clear previous validation states
             $('#officerForm .is-invalid').removeClass('is-invalid');
             $('#officerForm .invalid-feedback').text('').hide();
@@ -357,63 +352,63 @@
                 <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                 <span role="status">Memproses, silakan tunggu...</span>
             `);
+
             // Disable form inputs
             $('#officerForm input, #officerForm select, #closeBtn').prop('disabled', true);
-            $.ajax({
-                url: url,
-                type: 'POST',
-                data: formData,
-                contentType: false, // Required for FormData
-                processData: false, // Required for FormData
-                success: function(response) {
-                    if (response.success) {
-                        showSuccessToast(response.message, 'success');
-                        $('#officerModal').modal('hide');
-                        table.ajax.reload();
-                    } else {
-                        console.log("Validation Errors:", response.errors);
 
-                        // Clear previous validation states
-                        $('#userForm .is-invalid').removeClass('is-invalid');
-                        $('#userForm .invalid-feedback').text('').hide();
+            try {
+                const response = await axios.post(url, formData, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                });
 
-                        // Display new validation errors
-                        for (var field in response.errors) {
-                            if (response.errors.hasOwnProperty(field)) {
-                                var fieldElement = $('#' + field);
-                                var feedbackElement = fieldElement.siblings('.invalid-feedback'); // Adjust this if necessary
+                if (response.data.success) {
+                    showSuccessToast(response.data.message, 'success');
+                    $('#officerModal').modal('hide');
+                    table.ajax.reload();
+                } else {
+                    console.log("Validation Errors:", response.data.errors);
 
-                                console.log("Target Field:", fieldElement);
-                                console.log("Target Feedback:", feedbackElement);
+                    // Clear previous validation states
+                    $('#officerForm .is-invalid').removeClass('is-invalid');
+                    $('#officerForm .invalid-feedback').text('').hide();
 
-                                if (fieldElement.length > 0 && feedbackElement.length > 0) {
-                                    fieldElement.addClass('is-invalid');
-                                    feedbackElement.text(response.errors[field]).show();
+                    // Display new validation errors
+                    for (const field in response.data.errors) {
+                        if (response.data.errors.hasOwnProperty(field)) {
+                            const fieldElement = $('#' + field);
+                            const feedbackElement = fieldElement.siblings('.invalid-feedback');
 
-                                    // Remove error message when the user corrects the input
-                                    fieldElement.on('input change', function() {
-                                        $(this).removeClass('is-invalid');
-                                        $(this).siblings('.invalid-feedback').text('').hide();
-                                    });
-                                } else {
-                                    console.warn("Elemen tidak ditemukan pada field:", field);
-                                }
+                            console.log("Target Field:", fieldElement);
+                            console.log("Target Feedback:", feedbackElement);
+
+                            if (fieldElement.length > 0 && feedbackElement.length > 0) {
+                                fieldElement.addClass('is-invalid');
+                                feedbackElement.text(response.data.errors[field]).show();
+
+                                // Remove error message when the user corrects the input
+                                fieldElement.on('input change', function() {
+                                    $(this).removeClass('is-invalid');
+                                    $(this).siblings('.invalid-feedback').text('').hide();
+                                });
+                            } else {
+                                console.warn("Elemen tidak ditemukan pada field:", field);
                             }
                         }
-                        showFailedToast('Perbaiki kesalahan pada formulir.');
                     }
-                },
-                error: function(xhr, status, error) {
-                    showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
-                },
-                complete: function() {
-                    $('#submitButton').prop('disabled', false).html(`
-                        <i class="fa-solid fa-floppy-disk"></i> Simpan
-                    `);
-                    $('#officerForm input, #officerForm select, #closeBtn').prop('disabled', false)
+                    showFailedToast('Perbaiki kesalahan pada formulir.');
                 }
-            });
+            } catch (error) {
+                showFailedToast('Terjadi kesalahan. Silakan coba lagi.');
+            } finally {
+                $('#submitButton').prop('disabled', false).html(`
+                    <i class="fa-solid fa-floppy-disk"></i> Simpan
+                `);
+                $('#officerForm input, #officerForm select, #closeBtn').prop('disabled', false);
+            }
         });
+
         $('#officerModal').on('hidden.bs.modal', function() {
             $('#officerForm')[0].reset();
             $('.is-invalid').removeClass('is-invalid');

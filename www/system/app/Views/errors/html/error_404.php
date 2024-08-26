@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.78.1">
-    <title><?= lang('Errors.pageNotFound') ?></title>
-
+    <title><?= lang('Errors.whoops') ?></title>
+    <meta name="theme-color" content="#dc3545">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
 
 
@@ -43,14 +43,8 @@
 
     <main class="form-signin w-100 m-auto">
         <form>
-            <h1 class="display-1 fw-normal">404</h1>
-            <p>
-                <?php if (ENVIRONMENT !== 'production') : ?>
-                    <?= nl2br(esc($message)) ?>
-                <?php else : ?>
-                    The URL <span class="text-break"><?= $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?></span> was not found
-                <?php endif; ?>
-            </p>
+            <h1 class="display-1 fw-normal"><?= lang('Errors.whoops') ?></h1>
+            <p><?= lang('Errors.weHitASnag') ?></p>
             <hr>
             <small>
                 <p>IP Address: <?= $_SERVER['REMOTE_ADDR']; ?></p>

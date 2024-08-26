@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= $title; ?></title>
+  <link rel="manifest" href="<?= base_url(); ?>/manifest.json">
+  <meta name="theme-color" content="#5eba00">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Favicons -->
   <link href="https://padangeyecenter.com/assets/logo/logo_pec.png" rel="icon" />
@@ -45,6 +47,19 @@
     }
   </style>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('<?= base_url(); ?>/service-worker.js')
+          .then((registration) => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch((error) => {
+            console.error('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
 </head>
 
 <body class="d-flex align-items-center py-4 text-center" id="background" style="background-color: #5eba00;">
