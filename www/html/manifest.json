@@ -29,8 +29,8 @@
   ],
   "shortcuts": [
     {
-      "name": "Home",
-      "short_name": "Home",
+      "name": "Beranda",
+      "short_name": "Beranda",
       "description": "Beranda",
       "url": "/home",
       "icons": [
