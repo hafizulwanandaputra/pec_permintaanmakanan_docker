@@ -20,17 +20,15 @@ On the command line (the terminal)
   - Or run it in the background to free up the terminal using `docker compose up -d`
 - Install composer and copy `.env` file
   - Run `docker exec -it pec_permintaanmakanan_docker-php-apache-1 /bin/bash`
-  - Run `cd ..`
-  - Run `cd system`
   - Run `composer install`
   - Run `cp .env.example .env`
   - Run `exit`
 - To stop the containers
   - press <kbd>ctrl</kbd> + <kbd>C</kbd>
   - then run `docker compose down`
-- View the web pages at [http://localhost:8088/html/ ](http://localhost:8088/html)
+- View the web pages at [http://localhost:8088](http://localhost:8088)
   - Type the username `admin` and password `12345`
-  - Password can be changed in [http://localhost:8088/html/settings/changepassword ](http://localhost:8088/html/settings/changepassword)
+  - Password can be changed in [http://localhost:8088/settings/changepassword ](http://localhost:8088/settings/changepassword)
 - View phpMyAdmin at [http://pma.localhost:8088 ](http://pma.localhost:8088)
   - Type in the db user name `root` and db password to log in `12345`
   - You can change the password of MySQL database in the `docker-compose.yml` file.
